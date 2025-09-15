@@ -36,6 +36,16 @@ MS_V1/
 
 All visualizations are generated in both PDF and SVG formats to ensure compatibility across different publication and presentation platforms.
 
+File Formats
+All visualizations are generated in both PDF and SVG formats to ensure compatibility across different publication and presentation platforms.
+SVG Advantages for Publication
+The SVG format provides significant advantages for figure preparation:
+
+Easy text editing - Open SVG files directly in Adobe Illustrator to modify font sizes, labels, and annotations without quality loss
+Scalable graphics - Vector format allows infinite scaling for different publication requirements (posters, papers, presentations)
+Layer manipulation - Individual plot elements can be selected and modified independently (colors, line weights, transparency)
+Publication-ready - Direct compatibility with journal submission systems and professional design software
+
 ## Reproducibility
 
 This repository is designed to facilitate reproducible research by providing:
