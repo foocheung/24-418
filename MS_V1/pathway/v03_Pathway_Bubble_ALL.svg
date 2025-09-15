@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='1728.00pt' height='2448.00pt' viewBox='0 0 1728.00 2448.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxNzI4LjAwfDAuMDB8MjQ0OC4wMA=='>
+    <rect x='0.00' y='0.00' width='1728.00' height='2448.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxNzI4LjAwfDAuMDB8MjQ0OC4wMA==)'>
+<rect x='0.00' y='0.00000000000045' width='1728.00' height='2448.00' style='stroke-width: 1.75; stroke: #FFFFFF; fill: #FFFFFF;' />
+<rect x='281.47' y='67.59' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='501.64' cy='514.90' r='23.47' style='stroke-width: 0.71; stroke: #E1513F; stroke-opacity: 0.80; fill: #E1513F; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='358.87' r='17.80' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='150.81' r='16.98' style='stroke-width: 0.71; stroke: #E65E4B; stroke-opacity: 0.80; fill: #E65E4B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='410.88' r='16.45' style='stroke-width: 0.71; stroke: #E65F4C; stroke-opacity: 0.80; fill: #E65F4C; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='306.85' r='14.41' style='stroke-width: 0.71; stroke: #ED7460; stroke-opacity: 0.80; fill: #ED7460; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='618.93' r='13.19' style='stroke-width: 0.71; stroke: #EE7965; stroke-opacity: 0.80; fill: #EE7965; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='462.89' r='12.30' style='stroke-width: 0.71; stroke: #F1836F; stroke-opacity: 0.80; fill: #F1836F; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='566.92' r='11.67' style='stroke-width: 0.71; stroke: #F07F6C; stroke-opacity: 0.80; fill: #F07F6C; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='722.95' r='10.34' style='stroke-width: 0.71; stroke: #F48E7B; stroke-opacity: 0.80; fill: #F48E7B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='254.84' r='10.16' style='stroke-width: 0.71; stroke: #9BAFD5; stroke-opacity: 0.80; fill: #9BAFD5; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='670.94' r='8.40' style='stroke-width: 0.71; stroke: #FAA695; stroke-opacity: 0.80; fill: #FAA695; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='202.83' r='6.82' style='stroke-width: 0.71; stroke: #FEBFB2; stroke-opacity: 0.80; fill: #FEBFB2; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='514.90' r='28.10' style='stroke-width: 0.71; stroke: #D83228; stroke-opacity: 0.80; fill: #D83228; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='358.87' r='22.38' style='stroke-width: 0.71; stroke: #EC705C; stroke-opacity: 0.80; fill: #EC705C; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='462.89' r='17.55' style='stroke-width: 0.71; stroke: #E6604D; stroke-opacity: 0.80; fill: #E6604D; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='410.88' r='16.60' style='stroke-width: 0.71; stroke: #E65F4B; stroke-opacity: 0.80; fill: #E65F4B; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='566.92' r='11.48' style='stroke-width: 0.71; stroke: #F28470; stroke-opacity: 0.80; fill: #F28470; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='150.81' r='10.42' style='stroke-width: 0.71; stroke: #F5927F; stroke-opacity: 0.80; fill: #F5927F; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='254.84' r='10.42' style='stroke-width: 0.71; stroke: #F69481; stroke-opacity: 0.80; fill: #F69481; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='618.93' r='10.42' style='stroke-width: 0.71; stroke: #F69481; stroke-opacity: 0.80; fill: #F69481; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='202.83' r='10.29' style='stroke-width: 0.71; stroke: #F69380; stroke-opacity: 0.80; fill: #F69380; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='722.95' r='10.23' style='stroke-width: 0.71; stroke: #F69684; stroke-opacity: 0.80; fill: #F69684; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='306.85' r='10.07' style='stroke-width: 0.71; stroke: #F89F8D; stroke-opacity: 0.80; fill: #F89F8D; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='670.94' r='9.60' style='stroke-width: 0.71; stroke: #F79B89; stroke-opacity: 0.80; fill: #F79B89; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='98.80' r='9.42' style='stroke-width: 0.71; stroke: #F89F8D; stroke-opacity: 0.80; fill: #F89F8D; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='514.90' r='27.80' style='stroke-width: 0.71; stroke: #DA3B2E; stroke-opacity: 0.80; fill: #DA3B2E; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='358.87' r='16.45' style='stroke-width: 0.71; stroke: #F07E6A; stroke-opacity: 0.80; fill: #F07E6A; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='722.95' r='15.85' style='stroke-width: 0.71; stroke: #E86450; stroke-opacity: 0.80; fill: #E86450; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='150.81' r='15.53' style='stroke-width: 0.71; stroke: #EA6A57; stroke-opacity: 0.80; fill: #EA6A57; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='98.80' r='15.53' style='stroke-width: 0.71; stroke: #EA6C58; stroke-opacity: 0.80; fill: #EA6C58; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='410.88' r='14.43' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='618.93' r='14.34' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='462.89' r='13.65' style='stroke-width: 0.71; stroke: #ED7662; stroke-opacity: 0.80; fill: #ED7662; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='306.85' r='13.56' style='stroke-width: 0.71; stroke: #F28672; stroke-opacity: 0.80; fill: #F28672; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='202.83' r='13.45' style='stroke-width: 0.71; stroke: #EF7A66; stroke-opacity: 0.80; fill: #EF7A66; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='566.92' r='10.68' style='stroke-width: 0.71; stroke: #F58F7D; stroke-opacity: 0.80; fill: #F58F7D; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='670.94' r='7.03' style='stroke-width: 0.71; stroke: #FDB6A7; stroke-opacity: 0.80; fill: #FDB6A7; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='254.84' r='5.67' style='stroke-width: 0.71; stroke: #FFCABF; stroke-opacity: 0.80; fill: #FFCABF; fill-opacity: 0.80;' />
+<rect x='281.47' y='826.75' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='501.64' cy='952.46' r='25.00' style='stroke-width: 0.71; stroke: #E45846; stroke-opacity: 0.80; fill: #E45846; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='855.76' r='21.60' style='stroke-width: 0.71; stroke: #E65E4B; stroke-opacity: 0.80; fill: #E65E4B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1387.61' r='21.44' style='stroke-width: 0.71; stroke: #E65E4B; stroke-opacity: 0.80; fill: #E65E4B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='904.11' r='19.65' style='stroke-width: 0.71; stroke: #E55C4A; stroke-opacity: 0.80; fill: #E55C4A; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1484.31' r='18.35' style='stroke-width: 0.71; stroke: #E7624E; stroke-opacity: 0.80; fill: #E7624E; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1000.81' r='15.69' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1435.96' r='15.69' style='stroke-width: 0.71; stroke: #EC705C; stroke-opacity: 0.80; fill: #EC705C; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1339.26' r='14.05' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1290.91' r='13.45' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1145.86' r='11.97' style='stroke-width: 0.71; stroke: #F07F6B; stroke-opacity: 0.80; fill: #F07F6B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1049.16' r='10.49' style='stroke-width: 0.71; stroke: #F38976; stroke-opacity: 0.80; fill: #F38976; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1097.51' r='8.75' style='stroke-width: 0.71; stroke: #F89D8B; stroke-opacity: 0.80; fill: #F89D8B; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1194.21' r='7.47' style='stroke-width: 0.71; stroke: #B0BFDE; stroke-opacity: 0.80; fill: #B0BFDE; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1242.56' r='6.64' style='stroke-width: 0.71; stroke: #C0CBE4; stroke-opacity: 0.80; fill: #C0CBE4; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1435.96' r='25.39' style='stroke-width: 0.71; stroke: #DC4032; stroke-opacity: 0.80; fill: #DC4032; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1000.81' r='19.61' style='stroke-width: 0.71; stroke: #E35745; stroke-opacity: 0.80; fill: #E35745; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1339.26' r='19.61' style='stroke-width: 0.71; stroke: #E55B48; stroke-opacity: 0.80; fill: #E55B48; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1387.61' r='17.48' style='stroke-width: 0.71; stroke: #E65F4C; stroke-opacity: 0.80; fill: #E65F4C; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1145.86' r='16.60' style='stroke-width: 0.71; stroke: #E86451; stroke-opacity: 0.80; fill: #E86451; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1097.51' r='16.35' style='stroke-width: 0.71; stroke: #E86551; stroke-opacity: 0.80; fill: #E86551; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='952.46' r='15.64' style='stroke-width: 0.71; stroke: #E86653; stroke-opacity: 0.80; fill: #E86653; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1049.16' r='14.14' style='stroke-width: 0.71; stroke: #EB6D5A; stroke-opacity: 0.80; fill: #EB6D5A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='855.76' r='13.52' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1290.91' r='13.07' style='stroke-width: 0.71; stroke: #F1816E; stroke-opacity: 0.80; fill: #F1816E; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='904.11' r='12.84' style='stroke-width: 0.71; stroke: #EE7662; stroke-opacity: 0.80; fill: #EE7662; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1194.21' r='12.36' style='stroke-width: 0.71; stroke: #F07E6A; stroke-opacity: 0.80; fill: #F07E6A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1484.31' r='12.31' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1242.56' r='8.96' style='stroke-width: 0.71; stroke: #F89D8C; stroke-opacity: 0.80; fill: #F89D8C; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='855.76' r='17.61' style='stroke-width: 0.71; stroke: #E7624F; stroke-opacity: 0.80; fill: #E7624F; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1339.26' r='17.41' style='stroke-width: 0.71; stroke: #E86450; stroke-opacity: 0.80; fill: #E86450; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='904.11' r='17.13' style='stroke-width: 0.71; stroke: #E6604C; stroke-opacity: 0.80; fill: #E6604C; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='952.46' r='15.94' style='stroke-width: 0.71; stroke: #E96955; stroke-opacity: 0.80; fill: #E96955; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1387.61' r='15.01' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1000.81' r='13.74' style='stroke-width: 0.71; stroke: #EE7662; stroke-opacity: 0.80; fill: #EE7662; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1484.31' r='13.36' style='stroke-width: 0.71; stroke: #EF7A67; stroke-opacity: 0.80; fill: #EF7A67; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1049.16' r='13.34' style='stroke-width: 0.71; stroke: #EE7764; stroke-opacity: 0.80; fill: #EE7764; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1435.96' r='13.34' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1290.91' r='13.34' style='stroke-width: 0.71; stroke: #F1816D; stroke-opacity: 0.80; fill: #F1816D; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1194.21' r='11.66' style='stroke-width: 0.71; stroke: #F1826E; stroke-opacity: 0.80; fill: #F1826E; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1097.51' r='10.22' style='stroke-width: 0.71; stroke: #F48E7B; stroke-opacity: 0.80; fill: #F48E7B; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1242.56' r='9.89' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1145.86' r='9.32' style='stroke-width: 0.71; stroke: #F79A88; stroke-opacity: 0.80; fill: #F79A88; fill-opacity: 0.80;' />
+<rect x='281.47' y='1585.91' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='501.64' cy='1838.86' r='15.62' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1613.02' r='13.35' style='stroke-width: 0.71; stroke: #EB6F5C; stroke-opacity: 0.80; fill: #EB6F5C; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2019.53' r='13.19' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2064.70' r='12.20' style='stroke-width: 0.71; stroke: #F0806C; stroke-opacity: 0.80; fill: #F0806C; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1658.18' r='12.09' style='stroke-width: 0.71; stroke: #EF7D69; stroke-opacity: 0.80; fill: #EF7D69; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1974.37' r='11.30' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2200.21' r='10.91' style='stroke-width: 0.71; stroke: #F38975; stroke-opacity: 0.80; fill: #F38975; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2155.04' r='10.86' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2109.87' r='10.09' style='stroke-width: 0.71; stroke: #F5907D; stroke-opacity: 0.80; fill: #F5907D; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1884.03' r='9.67' style='stroke-width: 0.71; stroke: #F69381; stroke-opacity: 0.80; fill: #F69381; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1748.52' r='8.62' style='stroke-width: 0.71; stroke: #A8B8DA; stroke-opacity: 0.80; fill: #A8B8DA; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1793.69' r='7.22' style='stroke-width: 0.71; stroke: #FBAD9E; stroke-opacity: 0.80; fill: #FBAD9E; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='2245.38' r='7.22' style='stroke-width: 0.71; stroke: #B5C3E0; stroke-opacity: 0.80; fill: #B5C3E0; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1703.35' r='7.09' style='stroke-width: 0.71; stroke: #FCB3A4; stroke-opacity: 0.80; fill: #FCB3A4; fill-opacity: 0.80;' />
+<circle cx='501.64' cy='1929.20' r='6.91' style='stroke-width: 0.71; stroke: #FDB6A8; stroke-opacity: 0.80; fill: #FDB6A8; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2064.70' r='20.37' style='stroke-width: 0.71; stroke: #DF4A3A; stroke-opacity: 0.80; fill: #DF4A3A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1613.02' r='19.20' style='stroke-width: 0.71; stroke: #E35543; stroke-opacity: 0.80; fill: #E35543; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1884.03' r='14.50' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1929.20' r='14.13' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2245.38' r='11.52' style='stroke-width: 0.71; stroke: #F07E6A; stroke-opacity: 0.80; fill: #F07E6A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1838.86' r='10.23' style='stroke-width: 0.71; stroke: #F38B78; stroke-opacity: 0.80; fill: #F38B78; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2155.04' r='10.03' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1658.18' r='9.87' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1748.52' r='9.45' style='stroke-width: 0.71; stroke: #F69583; stroke-opacity: 0.80; fill: #F69583; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1703.35' r='9.45' style='stroke-width: 0.71; stroke: #F69683; stroke-opacity: 0.80; fill: #F69683; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1793.69' r='9.45' style='stroke-width: 0.71; stroke: #F79785; stroke-opacity: 0.80; fill: #F79785; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2109.87' r='9.26' style='stroke-width: 0.71; stroke: #F79785; stroke-opacity: 0.80; fill: #F79785; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2200.21' r='8.50' style='stroke-width: 0.71; stroke: #ACBBDC; stroke-opacity: 0.80; fill: #ACBBDC; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='1974.37' r='8.21' style='stroke-width: 0.71; stroke: #FAA695; stroke-opacity: 0.80; fill: #FAA695; fill-opacity: 0.80;' />
+<circle cx='416.96' cy='2019.53' r='8.17' style='stroke-width: 0.71; stroke: #FAA494; stroke-opacity: 0.80; fill: #FAA494; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1884.03' r='24.57' style='stroke-width: 0.71; stroke: #DD4435; stroke-opacity: 0.80; fill: #DD4435; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2019.53' r='18.14' style='stroke-width: 0.71; stroke: #E45947; stroke-opacity: 0.80; fill: #E45947; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1929.20' r='17.77' style='stroke-width: 0.71; stroke: #E35745; stroke-opacity: 0.80; fill: #E35745; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1838.86' r='16.89' style='stroke-width: 0.71; stroke: #E65F4C; stroke-opacity: 0.80; fill: #E65F4C; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2109.87' r='16.05' style='stroke-width: 0.71; stroke: #E7624F; stroke-opacity: 0.80; fill: #E7624F; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1613.02' r='14.41' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1974.37' r='14.41' style='stroke-width: 0.71; stroke: #ED7460; stroke-opacity: 0.80; fill: #ED7460; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1658.18' r='14.14' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2064.70' r='14.14' style='stroke-width: 0.71; stroke: #EC735F; stroke-opacity: 0.80; fill: #EC735F; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2155.04' r='13.78' style='stroke-width: 0.71; stroke: #EA6D59; stroke-opacity: 0.80; fill: #EA6D59; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1748.52' r='13.78' style='stroke-width: 0.71; stroke: #ED735F; stroke-opacity: 0.80; fill: #ED735F; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1793.69' r='11.87' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2200.21' r='10.15' style='stroke-width: 0.71; stroke: #F69582; stroke-opacity: 0.80; fill: #F69582; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='2245.38' r='9.91' style='stroke-width: 0.71; stroke: #F79886; stroke-opacity: 0.80; fill: #F79886; fill-opacity: 0.80;' />
+<circle cx='332.28' cy='1703.35' r='8.82' style='stroke-width: 0.71; stroke: #F9A493; stroke-opacity: 0.80; fill: #F9A493; fill-opacity: 0.80;' />
+<rect x='864.76' y='67.59' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1084.93' cy='101.36' r='18.70' style='stroke-width: 0.71; stroke: #EA6C58; stroke-opacity: 0.80; fill: #EA6C58; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='495.29' r='16.30' style='stroke-width: 0.71; stroke: #EB705C; stroke-opacity: 0.80; fill: #EB705C; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='607.84' r='15.05' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='157.64' r='14.89' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='382.74' r='13.47' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='551.57' r='11.98' style='stroke-width: 0.71; stroke: #F18470; stroke-opacity: 0.80; fill: #F18470; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='720.39' r='11.98' style='stroke-width: 0.71; stroke: #F28470; stroke-opacity: 0.80; fill: #F28470; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='439.02' r='11.98' style='stroke-width: 0.71; stroke: #F69481; stroke-opacity: 0.80; fill: #F69481; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='326.46' r='10.94' style='stroke-width: 0.71; stroke: #F48C79; stroke-opacity: 0.80; fill: #F48C79; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='664.12' r='10.53' style='stroke-width: 0.71; stroke: #F38B78; stroke-opacity: 0.80; fill: #F38B78; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='213.91' r='9.82' style='stroke-width: 0.71; stroke: #F5917E; stroke-opacity: 0.80; fill: #F5917E; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='270.19' r='7.46' style='stroke-width: 0.71; stroke: #FAA695; stroke-opacity: 0.80; fill: #FAA695; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='495.29' r='27.41' style='stroke-width: 0.71; stroke: #E04C3B; stroke-opacity: 0.80; fill: #E04C3B; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='157.64' r='18.55' style='stroke-width: 0.71; stroke: #E7614E; stroke-opacity: 0.80; fill: #E7614E; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='101.36' r='17.86' style='stroke-width: 0.71; stroke: #EA6A56; stroke-opacity: 0.80; fill: #EA6A56; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='326.46' r='17.84' style='stroke-width: 0.71; stroke: #E96956; stroke-opacity: 0.80; fill: #E96956; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='213.91' r='14.73' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='720.39' r='13.94' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='607.84' r='13.94' style='stroke-width: 0.71; stroke: #EE7965; stroke-opacity: 0.80; fill: #EE7965; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='270.19' r='12.88' style='stroke-width: 0.71; stroke: #F07E6A; stroke-opacity: 0.80; fill: #F07E6A; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='551.57' r='11.58' style='stroke-width: 0.71; stroke: #F28673; stroke-opacity: 0.80; fill: #F28673; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='382.74' r='9.20' style='stroke-width: 0.71; stroke: #F79A88; stroke-opacity: 0.80; fill: #F79A88; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='439.02' r='7.84' style='stroke-width: 0.71; stroke: #FBAB9B; stroke-opacity: 0.80; fill: #FBAB9B; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='664.12' r='6.27' style='stroke-width: 0.71; stroke: #FEC0B3; stroke-opacity: 0.80; fill: #FEC0B3; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='439.02' r='19.00' style='stroke-width: 0.71; stroke: #EE7965; stroke-opacity: 0.80; fill: #EE7965; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='101.36' r='17.88' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='495.29' r='17.69' style='stroke-width: 0.71; stroke: #E96A56; stroke-opacity: 0.80; fill: #E96A56; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='157.64' r='15.51' style='stroke-width: 0.71; stroke: #EB6F5C; stroke-opacity: 0.80; fill: #EB6F5C; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='326.46' r='14.27' style='stroke-width: 0.71; stroke: #EE7864; stroke-opacity: 0.80; fill: #EE7864; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='720.39' r='13.99' style='stroke-width: 0.71; stroke: #ED7460; stroke-opacity: 0.80; fill: #ED7460; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='607.84' r='13.62' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='270.19' r='13.29' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='213.91' r='13.18' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='551.57' r='12.87' style='stroke-width: 0.71; stroke: #F1806D; stroke-opacity: 0.80; fill: #F1806D; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='382.74' r='11.49' style='stroke-width: 0.71; stroke: #F1826E; stroke-opacity: 0.80; fill: #F1826E; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='664.12' r='8.69' style='stroke-width: 0.71; stroke: #F9A291; stroke-opacity: 0.80; fill: #F9A291; fill-opacity: 0.80;' />
+<rect x='864.76' y='826.75' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1084.93' cy='973.07' r='22.14' style='stroke-width: 0.71; stroke: #E96854; stroke-opacity: 0.80; fill: #E96854; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='860.52' r='21.57' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1479.55' r='18.06' style='stroke-width: 0.71; stroke: #E96955; stroke-opacity: 0.80; fill: #E96955; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1367.00' r='18.04' style='stroke-width: 0.71; stroke: #EB6D5A; stroke-opacity: 0.80; fill: #EB6D5A; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1254.45' r='17.33' style='stroke-width: 0.71; stroke: #EC705D; stroke-opacity: 0.80; fill: #EC705D; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1310.73' r='16.73' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='916.80' r='15.64' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1029.35' r='14.47' style='stroke-width: 0.71; stroke: #EE7662; stroke-opacity: 0.80; fill: #EE7662; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1423.28' r='10.46' style='stroke-width: 0.71; stroke: #F69583; stroke-opacity: 0.80; fill: #F69583; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1198.17' r='10.14' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1085.62' r='8.57' style='stroke-width: 0.71; stroke: #F69583; stroke-opacity: 0.80; fill: #F69583; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1141.90' r='7.50' style='stroke-width: 0.71; stroke: #FAA797; stroke-opacity: 0.80; fill: #FAA797; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1029.35' r='20.39' style='stroke-width: 0.71; stroke: #E55B49; stroke-opacity: 0.80; fill: #E55B49; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1367.00' r='19.85' style='stroke-width: 0.71; stroke: #E96855; stroke-opacity: 0.80; fill: #E96855; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='973.07' r='19.09' style='stroke-width: 0.71; stroke: #E96A56; stroke-opacity: 0.80; fill: #E96A56; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1198.17' r='16.18' style='stroke-width: 0.71; stroke: #EA6B57; stroke-opacity: 0.80; fill: #EA6B57; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='860.52' r='15.96' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1479.55' r='15.28' style='stroke-width: 0.71; stroke: #EB6D59; stroke-opacity: 0.80; fill: #EB6D59; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1254.45' r='15.16' style='stroke-width: 0.71; stroke: #EE7662; stroke-opacity: 0.80; fill: #EE7662; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1141.90' r='12.73' style='stroke-width: 0.71; stroke: #F07F6B; stroke-opacity: 0.80; fill: #F07F6B; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='916.80' r='12.18' style='stroke-width: 0.71; stroke: #F0806D; stroke-opacity: 0.80; fill: #F0806D; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1085.62' r='12.01' style='stroke-width: 0.71; stroke: #F1816D; stroke-opacity: 0.80; fill: #F1816D; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1310.73' r='11.81' style='stroke-width: 0.71; stroke: #F1826F; stroke-opacity: 0.80; fill: #F1826F; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1423.28' r='11.07' style='stroke-width: 0.71; stroke: #F79987; stroke-opacity: 0.80; fill: #F79987; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='860.52' r='17.18' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1367.00' r='17.17' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='973.07' r='16.94' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='916.80' r='16.70' style='stroke-width: 0.71; stroke: #EA6A56; stroke-opacity: 0.80; fill: #EA6A56; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1423.28' r='16.70' style='stroke-width: 0.71; stroke: #F07F6B; stroke-opacity: 0.80; fill: #F07F6B; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1254.45' r='16.66' style='stroke-width: 0.71; stroke: #EC725E; stroke-opacity: 0.80; fill: #EC725E; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1310.73' r='15.83' style='stroke-width: 0.71; stroke: #EB705C; stroke-opacity: 0.80; fill: #EB705C; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1479.55' r='15.46' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1141.90' r='13.43' style='stroke-width: 0.71; stroke: #EE7965; stroke-opacity: 0.80; fill: #EE7965; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1085.62' r='12.82' style='stroke-width: 0.71; stroke: #F0806C; stroke-opacity: 0.80; fill: #F0806C; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1198.17' r='12.33' style='stroke-width: 0.71; stroke: #F18470; stroke-opacity: 0.80; fill: #F18470; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1029.35' r='12.29' style='stroke-width: 0.71; stroke: #F07F6C; stroke-opacity: 0.80; fill: #F07F6C; fill-opacity: 0.80;' />
+<rect x='864.76' y='1585.91' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1084.93' cy='1828.23' r='13.68' style='stroke-width: 0.71; stroke: #EB6D59; stroke-opacity: 0.80; fill: #EB6D59; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='2164.78' r='13.68' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1962.85' r='11.80' style='stroke-width: 0.71; stroke: #F07E6B; stroke-opacity: 0.80; fill: #F07E6B; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='2232.09' r='11.80' style='stroke-width: 0.71; stroke: #F07E6B; stroke-opacity: 0.80; fill: #F07E6B; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1626.30' r='9.87' style='stroke-width: 0.71; stroke: #F48F7C; stroke-opacity: 0.80; fill: #F48F7C; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1760.92' r='8.59' style='stroke-width: 0.71; stroke: #F9A291; stroke-opacity: 0.80; fill: #F9A291; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1895.54' r='8.59' style='stroke-width: 0.71; stroke: #F9A493; stroke-opacity: 0.80; fill: #F9A493; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='1693.61' r='7.73' style='stroke-width: 0.71; stroke: #FBAE9F; stroke-opacity: 0.80; fill: #FBAE9F; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='2097.47' r='7.33' style='stroke-width: 0.71; stroke: #FCB3A4; stroke-opacity: 0.80; fill: #FCB3A4; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='2097.47' r='15.57' style='stroke-width: 0.71; stroke: #E55B48; stroke-opacity: 0.80; fill: #E55B48; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='2164.78' r='15.02' style='stroke-width: 0.71; stroke: #E96956; stroke-opacity: 0.80; fill: #E96956; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1962.85' r='10.71' style='stroke-width: 0.71; stroke: #EF7C68; stroke-opacity: 0.80; fill: #EF7C68; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1828.23' r='9.42' style='stroke-width: 0.71; stroke: #F38774; stroke-opacity: 0.80; fill: #F38774; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1895.54' r='8.73' style='stroke-width: 0.71; stroke: #F69482; stroke-opacity: 0.80; fill: #F69482; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='2232.09' r='8.26' style='stroke-width: 0.71; stroke: #F69582; stroke-opacity: 0.80; fill: #F69582; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1693.61' r='8.25' style='stroke-width: 0.71; stroke: #F69683; stroke-opacity: 0.80; fill: #F69683; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1626.30' r='8.15' style='stroke-width: 0.71; stroke: #F79987; stroke-opacity: 0.80; fill: #F79987; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='1760.92' r='6.61' style='stroke-width: 0.71; stroke: #FCB2A3; stroke-opacity: 0.80; fill: #FCB2A3; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='2232.09' r='11.42' style='stroke-width: 0.71; stroke: #ED7662; stroke-opacity: 0.80; fill: #ED7662; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='2164.78' r='11.29' style='stroke-width: 0.71; stroke: #F28471; stroke-opacity: 0.80; fill: #F28471; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1760.92' r='9.57' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1895.54' r='9.57' style='stroke-width: 0.71; stroke: #F5917F; stroke-opacity: 0.80; fill: #F5917F; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1693.61' r='8.92' style='stroke-width: 0.71; stroke: #F48E7B; stroke-opacity: 0.80; fill: #F48E7B; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1626.30' r='8.76' style='stroke-width: 0.71; stroke: #F5907D; stroke-opacity: 0.80; fill: #F5907D; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1828.23' r='7.30' style='stroke-width: 0.71; stroke: #FCB4A5; stroke-opacity: 0.80; fill: #FCB4A5; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='2097.47' r='6.37' style='stroke-width: 0.71; stroke: #C5CFE6; stroke-opacity: 0.80; fill: #C5CFE6; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='1962.85' r='4.91' style='stroke-width: 0.71; stroke: #FFD5CC; stroke-opacity: 0.80; fill: #FFD5CC; fill-opacity: 0.80;' />
+<circle cx='1084.93' cy='2030.16' r='10.33' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='1000.25' cy='2030.16' r='9.58' style='stroke-width: 0.71; stroke: #F28572; stroke-opacity: 0.80; fill: #F28572; fill-opacity: 0.80;' />
+<circle cx='915.57' cy='2030.16' r='7.83' style='stroke-width: 0.71; stroke: #FBAB9B; stroke-opacity: 0.80; fill: #FBAB9B; fill-opacity: 0.80;' />
+<rect x='1448.05' y='67.59' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1668.22' cy='96.60' r='19.70' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='435.05' r='15.95' style='stroke-width: 0.71; stroke: #EC735F; stroke-opacity: 0.80; fill: #EC735F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='725.15' r='15.58' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='144.95' r='15.58' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='531.75' r='14.83' style='stroke-width: 0.71; stroke: #EE7865; stroke-opacity: 0.80; fill: #EE7865; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='290.00' r='11.57' style='stroke-width: 0.71; stroke: #F1816E; stroke-opacity: 0.80; fill: #F1816E; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='483.40' r='9.30' style='stroke-width: 0.71; stroke: #F79987; stroke-opacity: 0.80; fill: #F79987; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='580.10' r='9.08' style='stroke-width: 0.71; stroke: #F38A77; stroke-opacity: 0.80; fill: #F38A77; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='628.45' r='9.08' style='stroke-width: 0.71; stroke: #F5917E; stroke-opacity: 0.80; fill: #F5917E; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='676.80' r='8.35' style='stroke-width: 0.71; stroke: #F69684; stroke-opacity: 0.80; fill: #F69684; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='241.65' r='8.31' style='stroke-width: 0.71; stroke: #F79987; stroke-opacity: 0.80; fill: #F79987; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='193.30' r='8.31' style='stroke-width: 0.71; stroke: #F79987; stroke-opacity: 0.80; fill: #F79987; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='338.35' r='7.32' style='stroke-width: 0.71; stroke: #ABBBDB; stroke-opacity: 0.80; fill: #ABBBDB; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='386.70' r='6.59' style='stroke-width: 0.71; stroke: #BAC7E2; stroke-opacity: 0.80; fill: #BAC7E2; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='531.75' r='21.84' style='stroke-width: 0.71; stroke: #E45A47; stroke-opacity: 0.80; fill: #E45A47; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='290.00' r='18.16' style='stroke-width: 0.71; stroke: #E76350; stroke-opacity: 0.80; fill: #E76350; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='144.95' r='18.16' style='stroke-width: 0.71; stroke: #E86552; stroke-opacity: 0.80; fill: #E86552; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='96.60' r='18.16' style='stroke-width: 0.71; stroke: #EA6A56; stroke-opacity: 0.80; fill: #EA6A56; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='193.30' r='13.19' style='stroke-width: 0.71; stroke: #EF7C68; stroke-opacity: 0.80; fill: #EF7C68; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='241.65' r='12.33' style='stroke-width: 0.71; stroke: #F1806D; stroke-opacity: 0.80; fill: #F1806D; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='725.15' r='12.11' style='stroke-width: 0.71; stroke: #F1806D; stroke-opacity: 0.80; fill: #F1806D; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='628.45' r='11.71' style='stroke-width: 0.71; stroke: #F1826E; stroke-opacity: 0.80; fill: #F1826E; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='483.40' r='9.32' style='stroke-width: 0.71; stroke: #F9A190; stroke-opacity: 0.80; fill: #F9A190; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='435.05' r='8.64' style='stroke-width: 0.71; stroke: #F89B8A; stroke-opacity: 0.80; fill: #F89B8A; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='580.10' r='8.00' style='stroke-width: 0.71; stroke: #FAA594; stroke-opacity: 0.80; fill: #FAA594; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='338.35' r='7.49' style='stroke-width: 0.71; stroke: #FBAD9E; stroke-opacity: 0.80; fill: #FBAD9E; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='386.70' r='7.49' style='stroke-width: 0.71; stroke: #B5C2DF; stroke-opacity: 0.80; fill: #B5C2DF; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='676.80' r='6.67' style='stroke-width: 0.71; stroke: #BBC7E2; stroke-opacity: 0.80; fill: #BBC7E2; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='483.40' r='15.49' style='stroke-width: 0.71; stroke: #F1826E; stroke-opacity: 0.80; fill: #F1826E; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='435.05' r='15.18' style='stroke-width: 0.71; stroke: #EC725E; stroke-opacity: 0.80; fill: #EC725E; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='96.60' r='15.18' style='stroke-width: 0.71; stroke: #EC725E; stroke-opacity: 0.80; fill: #EC725E; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='338.35' r='13.53' style='stroke-width: 0.71; stroke: #EF7B67; stroke-opacity: 0.80; fill: #EF7B67; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='725.15' r='13.34' style='stroke-width: 0.71; stroke: #ED7662; stroke-opacity: 0.80; fill: #ED7662; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='628.45' r='12.83' style='stroke-width: 0.71; stroke: #EF7A66; stroke-opacity: 0.80; fill: #EF7A66; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='386.70' r='11.63' style='stroke-width: 0.71; stroke: #F28572; stroke-opacity: 0.80; fill: #F28572; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='531.75' r='10.59' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='144.95' r='10.34' style='stroke-width: 0.71; stroke: #F48B78; stroke-opacity: 0.80; fill: #F48B78; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='580.10' r='10.19' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='290.00' r='10.15' style='stroke-width: 0.71; stroke: #F59280; stroke-opacity: 0.80; fill: #F59280; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='676.80' r='9.87' style='stroke-width: 0.71; stroke: #F59380; stroke-opacity: 0.80; fill: #F59380; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='193.30' r='9.77' style='stroke-width: 0.71; stroke: #F5927F; stroke-opacity: 0.80; fill: #F5927F; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='241.65' r='9.06' style='stroke-width: 0.71; stroke: #F89F8D; stroke-opacity: 0.80; fill: #F89F8D; fill-opacity: 0.80;' />
+<rect x='1448.05' y='826.75' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1668.22' cy='1430.10' r='20.39' style='stroke-width: 0.71; stroke: #DE4938; stroke-opacity: 0.80; fill: #DE4938; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='961.99' r='15.09' style='stroke-width: 0.71; stroke: #E7624F; stroke-opacity: 0.80; fill: #E7624F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1170.04' r='15.09' style='stroke-width: 0.71; stroke: #E86451; stroke-opacity: 0.80; fill: #E86451; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='857.96' r='13.65' style='stroke-width: 0.71; stroke: #EA6C58; stroke-opacity: 0.80; fill: #EA6C58; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1014.00' r='13.31' style='stroke-width: 0.71; stroke: #EB6F5B; stroke-opacity: 0.80; fill: #EB6F5B; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='909.97' r='13.31' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1222.05' r='11.57' style='stroke-width: 0.71; stroke: #F1826F; stroke-opacity: 0.80; fill: #F1826F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1274.06' r='10.87' style='stroke-width: 0.71; stroke: #F28571; stroke-opacity: 0.80; fill: #F28571; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1326.07' r='10.63' style='stroke-width: 0.71; stroke: #F38875; stroke-opacity: 0.80; fill: #F38875; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1066.01' r='10.10' style='stroke-width: 0.71; stroke: #F48B78; stroke-opacity: 0.80; fill: #F48B78; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1378.09' r='9.10' style='stroke-width: 0.71; stroke: #F9A291; stroke-opacity: 0.80; fill: #F9A291; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1118.02' r='8.62' style='stroke-width: 0.71; stroke: #F9A08F; stroke-opacity: 0.80; fill: #F9A08F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1482.11' r='7.96' style='stroke-width: 0.71; stroke: #F9A392; stroke-opacity: 0.80; fill: #F9A392; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1170.04' r='23.11' style='stroke-width: 0.71; stroke: #DB3E30; stroke-opacity: 0.80; fill: #DB3E30; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1430.10' r='23.11' style='stroke-width: 0.71; stroke: #DC4032; stroke-opacity: 0.80; fill: #DC4032; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1014.00' r='16.72' style='stroke-width: 0.71; stroke: #E35543; stroke-opacity: 0.80; fill: #E35543; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='961.99' r='16.33' style='stroke-width: 0.71; stroke: #E55C49; stroke-opacity: 0.80; fill: #E55C49; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1066.01' r='14.65' style='stroke-width: 0.71; stroke: #E86551; stroke-opacity: 0.80; fill: #E86551; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1118.02' r='13.80' style='stroke-width: 0.71; stroke: #E96955; stroke-opacity: 0.80; fill: #E96955; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1326.07' r='12.89' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1482.11' r='12.38' style='stroke-width: 0.71; stroke: #ED7561; stroke-opacity: 0.80; fill: #ED7561; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1222.05' r='12.38' style='stroke-width: 0.71; stroke: #F28572; stroke-opacity: 0.80; fill: #F28572; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='909.97' r='11.89' style='stroke-width: 0.71; stroke: #F1806D; stroke-opacity: 0.80; fill: #F1806D; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='857.96' r='9.47' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1378.09' r='6.56' style='stroke-width: 0.71; stroke: #FCAF9F; stroke-opacity: 0.80; fill: #FCAF9F; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1274.06' r='4.62' style='stroke-width: 0.71; stroke: #FFCABF; stroke-opacity: 0.80; fill: #FFCABF; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='909.97' r='11.39' style='stroke-width: 0.71; stroke: #EB705C; stroke-opacity: 0.80; fill: #EB705C; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1430.10' r='11.30' style='stroke-width: 0.71; stroke: #F07F6B; stroke-opacity: 0.80; fill: #F07F6B; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1170.04' r='8.96' style='stroke-width: 0.71; stroke: #F48C79; stroke-opacity: 0.80; fill: #F48C79; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1014.00' r='8.49' style='stroke-width: 0.71; stroke: #F48D7A; stroke-opacity: 0.80; fill: #F48D7A; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='857.96' r='8.49' style='stroke-width: 0.71; stroke: #F48E7B; stroke-opacity: 0.80; fill: #F48E7B; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1326.07' r='8.49' style='stroke-width: 0.71; stroke: #F5927F; stroke-opacity: 0.80; fill: #F5927F; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='961.99' r='8.49' style='stroke-width: 0.71; stroke: #F69582; stroke-opacity: 0.80; fill: #F69582; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1222.05' r='8.49' style='stroke-width: 0.71; stroke: #F69684; stroke-opacity: 0.80; fill: #F69684; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1118.02' r='8.49' style='stroke-width: 0.71; stroke: #F79785; stroke-opacity: 0.80; fill: #F79785; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1378.09' r='8.49' style='stroke-width: 0.71; stroke: #F9A08F; stroke-opacity: 0.80; fill: #F9A08F; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1482.11' r='6.19' style='stroke-width: 0.71; stroke: #BAC7E2; stroke-opacity: 0.80; fill: #BAC7E2; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1066.01' r='6.19' style='stroke-width: 0.71; stroke: #FCB4A6; stroke-opacity: 0.80; fill: #FCB4A6; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1274.06' r='6.19' style='stroke-width: 0.71; stroke: #FDB5A7; stroke-opacity: 0.80; fill: #FDB5A7; fill-opacity: 0.80;' />
+<rect x='1448.05' y='1585.91' width='270.98' height='686.57' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1668.22' cy='1693.61' r='22.85' style='stroke-width: 0.71; stroke: #D73027; stroke-opacity: 0.80; fill: #D73027; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1828.23' r='22.34' style='stroke-width: 0.71; stroke: #D73027; stroke-opacity: 0.80; fill: #D73027; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1760.92' r='15.37' style='stroke-width: 0.71; stroke: #EE7763; stroke-opacity: 0.80; fill: #EE7763; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1626.30' r='15.30' style='stroke-width: 0.71; stroke: #E1513F; stroke-opacity: 0.80; fill: #E1513F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1895.54' r='14.93' style='stroke-width: 0.71; stroke: #E7634F; stroke-opacity: 0.80; fill: #E7634F; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='1962.85' r='13.61' style='stroke-width: 0.71; stroke: #E6614D; stroke-opacity: 0.80; fill: #E6614D; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='2030.16' r='13.55' style='stroke-width: 0.71; stroke: #E86451; stroke-opacity: 0.80; fill: #E86451; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='2232.09' r='12.79' style='stroke-width: 0.71; stroke: #EB6E5A; stroke-opacity: 0.80; fill: #EB6E5A; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='2097.47' r='11.61' style='stroke-width: 0.71; stroke: #F28470; stroke-opacity: 0.80; fill: #F28470; fill-opacity: 0.80;' />
+<circle cx='1668.22' cy='2164.78' r='8.66' style='stroke-width: 0.71; stroke: #F9A190; stroke-opacity: 0.80; fill: #F9A190; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1828.23' r='18.19' style='stroke-width: 0.71; stroke: #E55B48; stroke-opacity: 0.80; fill: #E55B48; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='2232.09' r='14.13' style='stroke-width: 0.71; stroke: #6A8BC1; stroke-opacity: 0.80; fill: #6A8BC1; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='2097.47' r='13.01' style='stroke-width: 0.71; stroke: #7492C5; stroke-opacity: 0.80; fill: #7492C5; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1962.85' r='11.62' style='stroke-width: 0.71; stroke: #F1826E; stroke-opacity: 0.80; fill: #F1826E; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='2030.16' r='10.30' style='stroke-width: 0.71; stroke: #93A8D1; stroke-opacity: 0.80; fill: #93A8D1; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1895.54' r='10.19' style='stroke-width: 0.71; stroke: #90A6D0; stroke-opacity: 0.80; fill: #90A6D0; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1626.30' r='9.93' style='stroke-width: 0.71; stroke: #F5907E; stroke-opacity: 0.80; fill: #F5907E; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1693.61' r='9.35' style='stroke-width: 0.71; stroke: #F89C8A; stroke-opacity: 0.80; fill: #F89C8A; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='1760.92' r='8.18' style='stroke-width: 0.71; stroke: #FAA695; stroke-opacity: 0.80; fill: #FAA695; fill-opacity: 0.80;' />
+<circle cx='1583.54' cy='2164.78' r='6.35' style='stroke-width: 0.71; stroke: #C0CBE4; stroke-opacity: 0.80; fill: #C0CBE4; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1962.85' r='14.71' style='stroke-width: 0.71; stroke: #E45947; stroke-opacity: 0.80; fill: #E45947; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1626.30' r='12.13' style='stroke-width: 0.71; stroke: #EC715D; stroke-opacity: 0.80; fill: #EC715D; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1895.54' r='10.26' style='stroke-width: 0.71; stroke: #90A6D0; stroke-opacity: 0.80; fill: #90A6D0; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1693.61' r='10.26' style='stroke-width: 0.71; stroke: #F48B78; stroke-opacity: 0.80; fill: #F48B78; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='2232.09' r='10.12' style='stroke-width: 0.71; stroke: #F38B78; stroke-opacity: 0.80; fill: #F38B78; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1760.92' r='9.91' style='stroke-width: 0.71; stroke: #F89D8C; stroke-opacity: 0.80; fill: #F89D8C; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='2164.78' r='9.37' style='stroke-width: 0.71; stroke: #A0B2D7; stroke-opacity: 0.80; fill: #A0B2D7; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='2030.16' r='7.03' style='stroke-width: 0.71; stroke: #FDB5A7; stroke-opacity: 0.80; fill: #FDB5A7; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='2097.47' r='6.49' style='stroke-width: 0.71; stroke: #FEBEB1; stroke-opacity: 0.80; fill: #FEBEB1; fill-opacity: 0.80;' />
+<circle cx='1498.86' cy='1828.23' r='6.40' style='stroke-width: 0.71; stroke: #FEBDB0; stroke-opacity: 0.80; fill: #FEBDB0; fill-opacity: 0.80;' />
+<rect x='281.47' y='1556.52' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='416.96' y='1576.97' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='63.14px' lengthAdjust='spacingAndGlyphs'>NK cells</text>
+<rect x='864.76' y='1556.52' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1000.25' y='1576.97' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='109.36px' lengthAdjust='spacingAndGlyphs'>Dendritic cells</text>
+<rect x='1448.05' y='1556.52' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1583.54' y='1576.97' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='51.58px' lengthAdjust='spacingAndGlyphs'>B cells</text>
+<rect x='281.47' y='797.36' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='416.96' y='817.81' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='95.59px' lengthAdjust='spacingAndGlyphs'>CD8+ T cells</text>
+<rect x='864.76' y='797.36' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1000.25' y='817.81' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='71.11px' lengthAdjust='spacingAndGlyphs'>CD4 TCM</text>
+<rect x='1448.05' y='797.36' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1583.54' y='817.81' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='71.11px' lengthAdjust='spacingAndGlyphs'>CD8 TCM</text>
+<rect x='281.47' y='38.20' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='416.96' y='58.65' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='83.56px' lengthAdjust='spacingAndGlyphs'>Monocytes</text>
+<rect x='864.76' y='38.20' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1000.25' y='58.65' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='49.80px' lengthAdjust='spacingAndGlyphs'>T cells</text>
+<rect x='1448.05' y='38.20' width='270.98' height='29.39' style='stroke-width: 3.49; fill: #FFFFFF;' />
+<text x='1583.54' y='58.65' text-anchor='middle' style='font-size: 16.00px; font-weight: bold;fill: #1A1A1A; font-family: "Arial";' textLength='95.59px' lengthAdjust='spacingAndGlyphs'>CD4+ T cells</text>
+<polyline points='281.47,2272.48 552.45,2272.48 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<polyline points='332.28,2276.96 332.28,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='416.96,2276.96 416.96,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='501.64,2276.96 501.64,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<text transform='translate(340.39,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='23.12px' lengthAdjust='spacingAndGlyphs'>BG</text>
+<text transform='translate(425.08,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.55px' lengthAdjust='spacingAndGlyphs'>MDP</text>
+<text transform='translate(509.76,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.57px' lengthAdjust='spacingAndGlyphs'>SYKi</text>
+<polyline points='864.76,2272.48 1135.74,2272.48 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<polyline points='915.57,2276.96 915.57,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1000.25,2276.96 1000.25,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1084.93,2276.96 1084.93,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<text transform='translate(923.68,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='23.12px' lengthAdjust='spacingAndGlyphs'>BG</text>
+<text transform='translate(1008.37,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.55px' lengthAdjust='spacingAndGlyphs'>MDP</text>
+<text transform='translate(1093.05,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.57px' lengthAdjust='spacingAndGlyphs'>SYKi</text>
+<polyline points='1448.05,2272.48 1719.03,2272.48 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<polyline points='1498.86,2276.96 1498.86,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1583.54,2276.96 1583.54,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1668.22,2276.96 1668.22,2272.48 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<text transform='translate(1506.97,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='23.12px' lengthAdjust='spacingAndGlyphs'>BG</text>
+<text transform='translate(1591.66,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.55px' lengthAdjust='spacingAndGlyphs'>MDP</text>
+<text transform='translate(1676.34,2288.66) rotate(-45)' text-anchor='end' style='font-size: 16.00px;fill: #4D4D4D; font-family: "Arial";' textLength='35.57px' lengthAdjust='spacingAndGlyphs'>SYKi</text>
+<polyline points='1448.05,754.16 1448.05,67.59 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='1439.98' y='731.61' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='1439.98' y='673.54' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='692.98' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='1439.98' y='625.19' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='644.63' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='1439.98' y='576.84' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='596.28' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='198.09px' lengthAdjust='spacingAndGlyphs'>presentation (III) (M95.1)</text>
+<text x='1439.98' y='538.21' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='224.06px' lengthAdjust='spacingAndGlyphs'>enriched in T cells (I) (M7.0)</text>
+<text x='1439.98' y='480.14' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='1439.98' y='499.58' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='1439.98' y='441.51' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='261.04px' lengthAdjust='spacingAndGlyphs'>MHC-TLR7-TLR8 cluster (M146)</text>
+<text x='1439.98' y='383.44' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='169.04px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (I)</text>
+<text x='1439.98' y='402.88' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.0)</text>
+<text x='1439.98' y='335.09' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='174.05px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (II)</text>
+<text x='1439.98' y='354.53' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.1)</text>
+<text x='1439.98' y='296.46' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='1439.98' y='248.11' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='1439.98' y='199.76' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='1439.98' y='141.69' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='1439.98' y='161.13' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='1439.98' y='93.34' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='1439.98' y='112.78' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<polyline points='1443.57,725.15 1448.05,725.15 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,676.80 1448.05,676.80 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,628.45 1448.05,628.45 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,580.10 1448.05,580.10 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,531.75 1448.05,531.75 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,483.40 1448.05,483.40 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,435.05 1448.05,435.05 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,386.70 1448.05,386.70 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,338.35 1448.05,338.35 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,290.00 1448.05,290.00 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,241.65 1448.05,241.65 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,193.30 1448.05,193.30 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,144.95 1448.05,144.95 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,96.60 1448.05,96.60 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1448.05,1513.32 1448.05,826.75 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='1439.98' y='1488.57' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='1439.98' y='1436.55' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='224.06px' lengthAdjust='spacingAndGlyphs'>enriched in T cells (I) (M7.0)</text>
+<text x='1439.98' y='1374.82' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='1439.98' y='1394.26' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='1439.98' y='1322.81' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='195.09px' lengthAdjust='spacingAndGlyphs'>innate antiviral response</text>
+<text x='1439.98' y='1342.25' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M150)</text>
+<text x='1439.98' y='1280.52' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='261.04px' lengthAdjust='spacingAndGlyphs'>MHC-TLR7-TLR8 cluster (M146)</text>
+<text x='1439.98' y='1209.06' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='1439.98' y='1228.50' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='1439.98' y='1247.94' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='1439.98' y='1176.49' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='1439.98' y='1124.48' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='1439.98' y='1072.47' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='1439.98' y='1010.73' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='1439.98' y='1030.17' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='1439.98' y='958.72' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='1439.98' y='978.16' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<text x='1439.98' y='906.71' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='1439.98' y='926.15' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='222.09px' lengthAdjust='spacingAndGlyphs'>targets network (I) (M111.0)</text>
+<text x='1439.98' y='854.70' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='1439.98' y='874.14' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.10px' lengthAdjust='spacingAndGlyphs'>targets network (II) (M111.1)</text>
+<polyline points='1443.57,1482.11 1448.05,1482.11 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1430.10 1448.05,1430.10 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1378.09 1448.05,1378.09 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1326.07 1448.05,1326.07 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1274.06 1448.05,1274.06 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1222.05 1448.05,1222.05 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1170.04 1448.05,1170.04 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1118.02 1448.05,1118.02 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1066.01 1448.05,1066.01 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1014.00 1448.05,1014.00 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,961.99 1448.05,961.99 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,909.97 1448.05,909.97 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,857.96 1448.05,857.96 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1448.05,2272.48 1448.05,1585.91 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='1439.98' y='2219.11' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='239.09px' lengthAdjust='spacingAndGlyphs'>chemokines and inflammatory</text>
+<text x='1439.98' y='2238.55' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.05px' lengthAdjust='spacingAndGlyphs'>molecules in myeloid cells</text>
+<text x='1439.98' y='2257.99' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M86.0)</text>
+<text x='1439.98' y='2161.52' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='2180.96' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='1439.98' y='2094.21' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='2113.65' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='1439.98' y='2026.90' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='1439.98' y='2046.34' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='198.09px' lengthAdjust='spacingAndGlyphs'>presentation (III) (M95.1)</text>
+<text x='1439.98' y='1959.59' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='180.06px' lengthAdjust='spacingAndGlyphs'>enriched in B cells (IV)</text>
+<text x='1439.98' y='1979.03' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M47.3)</text>
+<text x='1439.98' y='1892.28' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='175.05px' lengthAdjust='spacingAndGlyphs'>enriched in B cells (V)</text>
+<text x='1439.98' y='1911.72' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M47.4)</text>
+<text x='1439.98' y='1834.69' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='224.06px' lengthAdjust='spacingAndGlyphs'>enriched in T cells (I) (M7.0)</text>
+<text x='1439.98' y='1757.66' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='1439.98' y='1777.10' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='1439.98' y='1680.63' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='1439.98' y='1700.07' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='1439.98' y='1719.51' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='1439.98' y='1623.03' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='230.10px' lengthAdjust='spacingAndGlyphs'>respiratory electron transport</text>
+<text x='1439.98' y='1642.47' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='235.09px' lengthAdjust='spacingAndGlyphs'>chain (mitochondrion) (M219)</text>
+<polyline points='1443.57,2232.09 1448.05,2232.09 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,2164.78 1448.05,2164.78 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,2097.47 1448.05,2097.47 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,2030.16 1448.05,2030.16 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1962.85 1448.05,1962.85 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1895.54 1448.05,1895.54 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1828.23 1448.05,1828.23 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1760.92 1448.05,1760.92 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1693.61 1448.05,1693.61 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='1443.57,1626.30 1448.05,1626.30 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='864.76,754.16 864.76,67.59 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='856.69' y='726.85' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='856.69' y='660.85' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='856.69' y='680.29' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='856.69' y='604.58' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='856.69' y='624.02' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='856.69' y='548.30' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='856.69' y='567.74' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='198.09px' lengthAdjust='spacingAndGlyphs'>presentation (III) (M95.1)</text>
+<text x='856.69' y='501.75' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='224.06px' lengthAdjust='spacingAndGlyphs'>enriched in T cells (I) (M7.0)</text>
+<text x='856.69' y='435.75' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='856.69' y='455.19' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='856.69' y='389.19' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='261.04px' lengthAdjust='spacingAndGlyphs'>MHC-TLR7-TLR8 cluster (M146)</text>
+<text x='856.69' y='332.92' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='856.69' y='276.64' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='856.69' y='220.37' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='856.69' y='154.37' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='856.69' y='173.81' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='856.69' y='98.10' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='856.69' y='117.54' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<polyline points='860.28,720.39 864.76,720.39 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,664.12 864.76,664.12 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,607.84 864.76,607.84 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,551.57 864.76,551.57 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,495.29 864.76,495.29 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,439.02 864.76,439.02 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,382.74 864.76,382.74 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,326.46 864.76,326.46 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,270.19 864.76,270.19 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,213.91 864.76,213.91 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,157.64 864.76,157.64 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,101.36 864.76,101.36 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='864.76,1513.32 864.76,826.75 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='856.69' y='1486.01' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='856.69' y='1420.01' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='856.69' y='1439.45' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='856.69' y='1363.74' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='195.09px' lengthAdjust='spacingAndGlyphs'>innate antiviral response</text>
+<text x='856.69' y='1383.18' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M150)</text>
+<text x='856.69' y='1317.18' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='261.04px' lengthAdjust='spacingAndGlyphs'>MHC-TLR7-TLR8 cluster (M146)</text>
+<text x='856.69' y='1241.47' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='856.69' y='1260.91' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='856.69' y='1280.35' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='856.69' y='1204.63' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='856.69' y='1148.35' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='856.69' y='1092.08' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='856.69' y='1026.08' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='856.69' y='1045.52' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='856.69' y='969.81' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='856.69' y='989.25' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<text x='856.69' y='913.53' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='856.69' y='932.97' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='222.09px' lengthAdjust='spacingAndGlyphs'>targets network (I) (M111.0)</text>
+<text x='856.69' y='857.25' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='856.69' y='876.69' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.10px' lengthAdjust='spacingAndGlyphs'>targets network (II) (M111.1)</text>
+<polyline points='860.28,1479.55 864.76,1479.55 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1423.28 864.76,1423.28 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1367.00 864.76,1367.00 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1310.73 864.76,1310.73 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1254.45 864.76,1254.45 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1198.17 864.76,1198.17 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1141.90 864.76,1141.90 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1085.62 864.76,1085.62 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1029.35 864.76,1029.35 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,973.07 864.76,973.07 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,916.80 864.76,916.80 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,860.52 864.76,860.52 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='864.76,2272.48 864.76,1585.91 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='856.69' y='2219.11' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='239.09px' lengthAdjust='spacingAndGlyphs'>chemokines and inflammatory</text>
+<text x='856.69' y='2238.55' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.05px' lengthAdjust='spacingAndGlyphs'>molecules in myeloid cells</text>
+<text x='856.69' y='2257.99' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M86.0)</text>
+<text x='856.69' y='2171.24' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.07px' lengthAdjust='spacingAndGlyphs'>DC surface signature (S5)</text>
+<text x='856.69' y='2094.21' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='856.69' y='2113.65' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='856.69' y='2026.90' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='856.69' y='2046.34' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='856.69' y='1969.31' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='261.04px' lengthAdjust='spacingAndGlyphs'>MHC-TLR7-TLR8 cluster (M146)</text>
+<text x='856.69' y='1882.56' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='856.69' y='1902.00' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='856.69' y='1921.44' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='856.69' y='1824.97' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='190.07px' lengthAdjust='spacingAndGlyphs'>T &amp; B cell development,</text>
+<text x='856.69' y='1844.41' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='143.06px' lengthAdjust='spacingAndGlyphs'>activation (M62.0)</text>
+<text x='856.69' y='1767.38' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='856.69' y='1700.07' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='856.69' y='1623.03' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='856.69' y='1642.47' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<polyline points='860.28,2232.09 864.76,2232.09 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,2164.78 864.76,2164.78 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,2097.47 864.76,2097.47 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,2030.16 864.76,2030.16 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1962.85 864.76,1962.85 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1895.54 864.76,1895.54 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1828.23 864.76,1828.23 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1760.92 864.76,1760.92 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1693.61 864.76,1693.61 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='860.28,1626.30 864.76,1626.30 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='281.47,754.16 281.47,67.59 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='273.40' y='729.41' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='273.40' y='667.67' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='687.11' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='273.40' y='615.66' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='635.10' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='273.40' y='563.65' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='583.09' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='198.09px' lengthAdjust='spacingAndGlyphs'>presentation (III) (M95.1)</text>
+<text x='273.40' y='511.64' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='207.09px' lengthAdjust='spacingAndGlyphs'>enriched in monocytes (II)</text>
+<text x='273.40' y='531.08' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M11.0)</text>
+<text x='273.40' y='459.62' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='214.08px' lengthAdjust='spacingAndGlyphs'>enriched in monocytes (IV)</text>
+<text x='273.40' y='479.06' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='72.03px' lengthAdjust='spacingAndGlyphs'>(M118.0)</text>
+<text x='273.40' y='407.61' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='231.09px' lengthAdjust='spacingAndGlyphs'>enriched in myeloid cells and</text>
+<text x='273.40' y='427.05' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='139.05px' lengthAdjust='spacingAndGlyphs'>monocytes (M81)</text>
+<text x='273.40' y='355.60' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='220.08px' lengthAdjust='spacingAndGlyphs'>immune activation - generic</text>
+<text x='273.40' y='375.04' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='120.04px' lengthAdjust='spacingAndGlyphs'>cluster (M37.0)</text>
+<text x='273.40' y='293.87' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='273.40' y='313.31' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='273.40' y='332.75' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='273.40' y='251.57' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='190.07px' lengthAdjust='spacingAndGlyphs'>T &amp; B cell development,</text>
+<text x='273.40' y='271.01' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='143.06px' lengthAdjust='spacingAndGlyphs'>activation (M62.0)</text>
+<text x='273.40' y='199.56' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='273.40' y='219.00' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<text x='273.40' y='147.55' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='273.40' y='166.99' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='222.09px' lengthAdjust='spacingAndGlyphs'>targets network (I) (M111.0)</text>
+<text x='273.40' y='95.54' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='273.40' y='114.98' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.10px' lengthAdjust='spacingAndGlyphs'>targets network (II) (M111.1)</text>
+<polyline points='276.98,722.95 281.47,722.95 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,670.94 281.47,670.94 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,618.93 281.47,618.93 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,566.92 281.47,566.92 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,514.90 281.47,514.90 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,462.89 281.47,462.89 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,410.88 281.47,410.88 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,358.87 281.47,358.87 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,306.85 281.47,306.85 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,254.84 281.47,254.84 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,202.83 281.47,202.83 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,150.81 281.47,150.81 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,98.80 281.47,98.80 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='281.47,1513.32 281.47,826.75 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='273.40' y='1490.76' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='273.40' y='1442.42' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='224.06px' lengthAdjust='spacingAndGlyphs'>enriched in T cells (I) (M7.0)</text>
+<text x='273.40' y='1384.35' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='195.09px' lengthAdjust='spacingAndGlyphs'>innate antiviral response</text>
+<text x='273.40' y='1403.79' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M150)</text>
+<text x='273.40' y='1336.00' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='192.10px' lengthAdjust='spacingAndGlyphs'>leukocyte activation and</text>
+<text x='273.40' y='1355.44' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='126.04px' lengthAdjust='spacingAndGlyphs'>migration (M45)</text>
+<text x='273.40' y='1277.93' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='273.40' y='1297.37' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='273.40' y='1316.81' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='273.40' y='1239.30' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='169.04px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (I)</text>
+<text x='273.40' y='1258.74' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.0)</text>
+<text x='273.40' y='1190.95' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='174.05px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (II)</text>
+<text x='273.40' y='1210.39' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.1)</text>
+<text x='273.40' y='1152.32' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='273.40' y='1103.97' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='273.40' y='1055.62' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='273.40' y='997.55' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='273.40' y='1016.99' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='273.40' y='949.20' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='273.40' y='968.64' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<text x='273.40' y='900.85' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='273.40' y='920.29' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='222.09px' lengthAdjust='spacingAndGlyphs'>targets network (I) (M111.0)</text>
+<text x='273.40' y='852.50' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='243.06px' lengthAdjust='spacingAndGlyphs'>viral sensing &amp; immunity; IRF2</text>
+<text x='273.40' y='871.94' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.10px' lengthAdjust='spacingAndGlyphs'>targets network (II) (M111.1)</text>
+<polyline points='276.98,1484.31 281.47,1484.31 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1435.96 281.47,1435.96 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1387.61 281.47,1387.61 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1339.26 281.47,1339.26 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1290.91 281.47,1290.91 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1242.56 281.47,1242.56 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1194.21 281.47,1194.21 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1145.86 281.47,1145.86 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1097.51 281.47,1097.51 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1049.16 281.47,1049.16 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1000.81 281.47,1000.81 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,952.46 281.47,952.46 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,904.11 281.47,904.11 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,855.76 281.47,855.76 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='281.47,2272.48 281.47,1585.91 ' style='stroke-width: 1.75; stroke-linecap: butt;' />
+<text x='273.40' y='2251.83' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='227.07px' lengthAdjust='spacingAndGlyphs'>antiviral IFN signature (M75)</text>
+<text x='273.40' y='2196.94' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='2216.38' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='173.07px' lengthAdjust='spacingAndGlyphs'>presentation (I) (M71)</text>
+<text x='273.40' y='2151.78' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='2171.22' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='193.09px' lengthAdjust='spacingAndGlyphs'>presentation (II) (M95.0)</text>
+<text x='273.40' y='2106.61' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='152.09px' lengthAdjust='spacingAndGlyphs'>enriched in antigen</text>
+<text x='273.40' y='2126.05' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='198.09px' lengthAdjust='spacingAndGlyphs'>presentation (III) (M95.1)</text>
+<text x='273.40' y='2061.44' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='181.05px' lengthAdjust='spacingAndGlyphs'>enriched in NK cells (I)</text>
+<text x='273.40' y='2080.88' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='52.01px' lengthAdjust='spacingAndGlyphs'>(M7.2)</text>
+<text x='273.40' y='2016.27' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='242.09px' lengthAdjust='spacingAndGlyphs'>lysosomal/endosomal proteins</text>
+<text x='273.40' y='2035.71' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M139)</text>
+<text x='273.40' y='1961.38' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='163.10px' lengthAdjust='spacingAndGlyphs'>regulation of antigen</text>
+<text x='273.40' y='1980.82' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.10px' lengthAdjust='spacingAndGlyphs'>presentation and immune</text>
+<text x='273.40' y='2000.26' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='131.05px' lengthAdjust='spacingAndGlyphs'>response (M5.0)</text>
+<text x='273.40' y='1925.93' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='169.04px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (I)</text>
+<text x='273.40' y='1945.37' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.0)</text>
+<text x='273.40' y='1880.76' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='174.05px' lengthAdjust='spacingAndGlyphs'>signaling in T cells (II)</text>
+<text x='273.40' y='1900.20' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.02px' lengthAdjust='spacingAndGlyphs'>(M35.1)</text>
+<text x='273.40' y='1835.59' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='190.07px' lengthAdjust='spacingAndGlyphs'>T &amp; B cell development,</text>
+<text x='273.40' y='1855.03' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='143.06px' lengthAdjust='spacingAndGlyphs'>activation (M62.0)</text>
+<text x='273.40' y='1800.15' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='203.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (I) (M7.1)</text>
+<text x='273.40' y='1754.98' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='208.06px' lengthAdjust='spacingAndGlyphs'>T cell activation (II) (M7.3)</text>
+<text x='273.40' y='1709.81' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='210.05px' lengthAdjust='spacingAndGlyphs'>T cell activation (IV) (M52)</text>
+<text x='273.40' y='1654.92' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='159.06px' lengthAdjust='spacingAndGlyphs'>T cell activation and</text>
+<text x='273.40' y='1674.36' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='128.04px' lengthAdjust='spacingAndGlyphs'>signaling (M5.1)</text>
+<text x='273.40' y='1609.75' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='204.11px' lengthAdjust='spacingAndGlyphs'>type I interferon response</text>
+<text x='273.40' y='1629.19' text-anchor='end' style='font-size: 18.00px;fill: #4D4D4D; font-family: "Arial";' textLength='57.02px' lengthAdjust='spacingAndGlyphs'>(M127)</text>
+<polyline points='276.98,2245.38 281.47,2245.38 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,2200.21 281.47,2200.21 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,2155.04 281.47,2155.04 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,2109.87 281.47,2109.87 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,2064.70 281.47,2064.70 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,2019.53 281.47,2019.53 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1974.37 281.47,1974.37 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1929.20 281.47,1929.20 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1884.03 281.47,1884.03 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1838.86 281.47,1838.86 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1793.69 281.47,1793.69 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1748.52 281.47,1748.52 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1703.35 281.47,1703.35 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1658.18 281.47,1658.18 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='276.98,1613.02 281.47,1613.02 ' style='stroke-width: 1.75; stroke: #333333; stroke-linecap: butt;' />
+<text x='1000.25' y='2333.71' text-anchor='middle' style='font-size: 18.00px; font-family: "Arial";' textLength='76.03px' lengthAdjust='spacingAndGlyphs'>Condition</text>
+<text transform='translate(21.88,1170.04) rotate(-90)' text-anchor='middle' style='font-size: 18.00px; font-family: "Arial";' textLength='69.03px' lengthAdjust='spacingAndGlyphs'>Pathway</text>
+<rect x='733.27' y='2355.62' width='146.20' height='57.32' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<text x='742.24' y='2390.02' style='font-size: 16.00px; font-family: "Arial";' textLength='32.90px' lengthAdjust='spacingAndGlyphs'>NES</text>
+<image width='86.40' height='17.28' x='784.10' y='2364.59' preserveAspectRatio='none' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAABCAYAAABkOJMpAAAAs0lEQVQ4jZWQQRYCMQhDkx7Xq3gqL0Zc2M4AhaorHhCS3/LxfIkESGLgU1dPAgQxiG1GAqPQXl7rBkkz62jmdAzBv2ILfD1LyD3scs7mWzLEfcly4qfj/8F/uznmxF242f6g8ZMACZDd1YqZBFjqy9nSFrNO3+Z984hs2t5ya6V0Y5r6qK08lPKU2JSYfZbS+y7/g04No89Vwabw3n5/75y3/aGx+A/hxuSqxX7dme8n4+zfZLJyPsqZfesAAAAASUVORK5CYII='/>
+<polyline points='802.94,2378.41 802.94,2381.87 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='823.26,2378.41 823.26,2381.87 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='843.57,2378.41 843.57,2381.87 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='863.89,2378.41 863.89,2381.87 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='802.94,2368.04 802.94,2364.59 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='823.26,2368.04 823.26,2364.59 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='843.57,2368.04 843.57,2364.59 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='863.89,2368.04 863.89,2364.59 ' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<text x='802.94' y='2400.88' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='12.45px' lengthAdjust='spacingAndGlyphs'>-1</text>
+<text x='823.26' y='2400.88' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='843.57' y='2400.88' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='863.89' y='2400.88' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>2</text>
+<rect x='897.40' y='2355.62' width='369.83' height='83.41' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<text x='906.36' y='2403.07' style='font-size: 16.00px; font-family: "Arial";' textLength='111.18px' lengthAdjust='spacingAndGlyphs'>-log10(p.adjust)</text>
+<rect x='1026.51' y='2364.59' width='42.57' height='65.48' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1047.79' cy='2397.33' r='16.38' style='stroke-width: 0.71; stroke: #000000; stroke-opacity: 0.80; fill: #000000; fill-opacity: 0.80;' />
+<rect x='1094.79' y='2364.59' width='55.53' height='65.48' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1122.55' cy='2397.33' r='21.26' style='stroke-width: 0.71; stroke: #000000; stroke-opacity: 0.80; fill: #000000; fill-opacity: 0.80;' />
+<rect x='1176.04' y='2364.59' width='65.48' height='65.48' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+<circle cx='1208.78' cy='2397.33' r='25.00' style='stroke-width: 0.71; stroke: #000000; stroke-opacity: 0.80; fill: #000000; fill-opacity: 0.80;' />
+<text x='1078.04' y='2402.35' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='1159.29' y='2402.35' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='1250.48' y='2402.35' style='font-size: 14.00px; font-family: "Arial";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='281.47' y='24.46' style='font-size: 21.60px; font-family: "Arial";' textLength='284.44px' lengthAdjust='spacingAndGlyphs'>Pathway Enrichment Analysis</text>
+</g>
+</svg>
