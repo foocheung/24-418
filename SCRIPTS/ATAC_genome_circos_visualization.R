@@ -1,3 +1,32 @@
+############################################################
+# ATAC-seq Genome-wide Circos Visualization
+#
+# Purpose:
+# This script generates circos plots showing:
+# - Genome-wide ATAC-seq accessibility (binned counts)
+# - HIV integration sites (optional overlay)
+# - Differential ATAC peaks (filtered by FC, correlation, FDR)
+#
+# Data layers:
+# 1) Binned ATAC counts (BG, MDP, SYKi)
+# 2) HIV integration positions (points)
+# 3) Significant ATAC peaks (line tracks)
+#
+# Visualization design:
+# - Each chromosome is displayed as a circular sector
+# - ATAC counts are shown as radial bars
+# - Integration sites are plotted as points
+# - Peaks are shown as vertical genomic lines
+#
+# Output:
+# - Circos plots saved as PDF and SVG in:
+#     MS_V1/CIRCOS
+#
+# Notes:
+# - This script is for visualization only
+# - No statistical testing is performed here
+############################################################
+
 #!/usr/bin/env Rscript
 
 suppressPackageStartupMessages({
