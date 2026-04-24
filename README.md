@@ -136,13 +136,3 @@ Identifies overlaps between:
 
 ---
 
-## Notes
-
-* Many scripts rely on upstream preprocessing (e.g., ArchR peak2gene links, Seurat objects)
-* Visualization scripts are intended for **figure generation**, not inference
-* Interpretation should distinguish between:
-
-  * **Regulatory associations (peak2gene)**
-  * **Physical chromatin accessibility (genomic overlap)**
-
-* Or write a **“How to run” section** so others can reproduce your pipeline easily
