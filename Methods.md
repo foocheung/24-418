@@ -1,55 +1,47 @@
-### Computational Methods Version 0.1
+## Methods
 
-## Processing scRNAseq
-Raw 10x Genomics scRNA-seq data were imported into Seurat objects per sequencing lane, with sample identities assigned using Demuxalot. Putative doublets were detected using DoubletFinder and removed prior to downstream processing. Lane-level objects were normalized, variable features identified, and merged into a single Seurat object for integration. Batch correction and integration were performed and tested with Seurat’s CCA, RPCA and Harmony. The final object was annotated using Azimuth PBMC reference mapping, clustered, visualized by UMAP, and saved for downstream analyses.
+### Processing scRNA-seq
+Raw 10x Genomics scRNA-seq data were imported into Seurat objects per sequencing lane, with sample identities assigned using Demuxalot. Putative doublets were detected using DoubletFinder and removed prior to downstream processing. Lane-level objects were normalized, variable features identified, and merged into a single Seurat object for integration. Batch correction and integration were performed with Seurat’s CCA, RPCA, and Harmony. Cell type annotation was performed using reference-based mapping with the Monaco immune reference dataset, followed by manual curation based on canonical marker gene expression.
 
-## Processing ATACseq
-ATAC-seq data were processed using the ArchR framework, which provides a scalable wrapper for single-cell chromatin accessibility analysis. Raw fragment files were imported into ArchR projects, quality control filters (e.g., TSS enrichment, fragment counts) were applied, and doublets were identified and removed. Dimensionality reduction and clustering were performed within ArchR, followed by peak calling and integration with gene annotations. Motif enrichment and transcription factor activity analyses were carried out using ArchR’s built-in functionality.
+### Processing scATAC-seq data
+Single-cell ATAC-seq data were processed using ArchR. Raw fragment files were imported into ArchR projects, and quality control filtering was applied based on transcription start site (TSS) enrichment and fragment counts. Doublets were identified and removed using ArchR’s doublet detection.
 
-## Pathway Enrichment Analysis scRNAseq
-Single-cell RNA-seq data were aggregated into pseudobulk expression profiles using Seurat’s AggregateExpression() function, with aggregation performed separately by treatment status (treated vs. untreated), cell type (monaco_ann1 annotation), subject, and sequencing lane to preserve within-subject and technical structure. Nine immune populations were analyzed, including monocytes, T cells, CD4⁺ T cells, CD8⁺ T cells, CD4 TCM, CD8 TCM, NK cells, dendritic cells, and B cells. For each training condition (SYKi, MDP, BG), differential expression between treated and untreated pseudobulk samples was contrasted with the same comparison in the untrained baseline. Genes shared between the two contrasts were used to compute a delta-of-delta log2 fold change, defined as: 
-Δlog2FC = (log2FC of Treated vs. Untreated in the Trained condition) − (log2FC of Treated vs. Untreated in the Untrained condition). 
-This ranking highlights genes whose treatment response was modified by prior training, beyond baseline differences. Delta-of-delta ranked gene lists were then analyzed using clusterProfiler::GSEA() against a Blood Transcriptional Modules (BTM) gene set, with parameters set to Benjamini–Hochberg correction (pAdjustMethod = "BH"). To compare enrichment across conditions, significantly enriched pathways were compiled per cell type and displayed, and combined diagrams summarized shared and unique pathway enrichments across the three training conditions and the untrained baseline.
+Dimensionality reduction was performed using iterative LSI, followed by clustering and UMAP visualization. Peaks were called using MACS2 on pseudobulk profiles. Gene activity scores were computed, and cell type labels were transferred from matched scRNA-seq data using ArchR integration.
 
-## ATAC-seq Associated Gene Pathway Analysis
-Pathway enrichment analysis was performed on genes associated with significant ATAC-seq peaks using the clusterProfiler and ReactomePA packages. Peak-gene association files for CD14 monocytes and CD4 TCM cells were filtered using stringent criteria: Log2 fold-change, absolute correlation coefficient (positive for correlated, negative for anti-correlated genes). Gene symbols were converted to ENTREZ identifiers using the org.Hs.eg.db annotation package. Reactome pathway enrichment analysis was conducted with p-value cutoff < 0.05, while Gene Ontology (GO) enrichment analysis across all ontologies used Benjamini-Hochberg correction with q-value cutoff. Results were visualized as bar plots for Reactome pathways (top 20 terms) and dot plots for GO enrichment (top 20 terms). Separate analyses were conducted for three experimental conditions (BG, MDP, SYKi) in both cell types, focusing primarily on positively correlated gene sets. Combined multi-panel figures were generated to compare pathway enrichment across conditions and cell types.
+Peak-to-gene links were computed using correlation-based methods, and motif activity was inferred using chromVAR deviation scores.
 
+### Pathway Enrichment Analysis (scRNA-seq)
+scRNA-seq data were aggregated into pseudobulk profiles using Seurat’s AggregateExpression() grouped by treatment, cell type, subject, and lane. Differential expression compared PMA-treated versus untreated samples within each condition.
 
----
+A delta-of-delta framework was applied:
 
-### **Transcription Factor Family Analysis**
+Δlog2FC = log2FC(trained treated vs untreated) − log2FC(untrained treated vs untreated)
 
-Transcription factor (TF) analysis was performed on intersection datasets derived from UpSet plots. TF names were extracted from intersection files using regular expression pattern matching and subsequently mapped to protein families using the CisBP database. For each intersection and cell type, TF family counts and percentage distributions were calculated independent of regulatory direction.
+Gene lists were ranked and analyzed using GSEA (clusterProfiler) against BTM pathways. P-values were adjusted using Benjamini–Hochberg correction.
 
-To visualize these patterns, multiple complementary approaches were applied. UpSet plots were annotated with TF family information to highlight overlaps across conditions. Bar charts were generated to display TF family counts per cell type, while stacked bar charts illustrated percentage distributions, with labels indicating the top three most abundant families in each condition. Analyses were conducted both by intersection prefix and at the level of individual cell types to capture both global and cell-type–specific trends.
+Results were visualized using bubble plots showing NES (color) and −log10(p.adjust) (size), faceted by cell type.
 
-Motif deviation analysis was performed using ArchR, which implements chromVAR-based deviation scoring to quantify TF motif activity from scATAC-seq data. Motif deviation scores were computed from the MotifMatrix using the `getMatrixFromProject()` and `plotGroups()` functions. These methods calculate GC-corrected and depth-normalized chromatin accessibility across peaks containing each motif. For each TF motif, the number of ATAC fragments within motif-containing peaks is compared to matched background peaks using the chromVAR framework, producing standardized deviation z-scores that indicate whether motif-associated chromatin regions are more accessible than expected by chance.
+### ATAC-seq Associated Gene Pathway Analysis
+Pathway enrichment was performed on genes linked to ATAC-seq peaks using ArchR peak-to-gene associations. Peaks were filtered based on log2FC, correlation, and FDR thresholds. Reactome and GO enrichment were performed using clusterProfiler and ReactomePA.
 
-Differences in motif deviation z-scores between trained and untrained conditions were assessed within each cell type using the Wilcoxon rank-sum test. Analyses were performed independent of direction, and multiple hypothesis testing correction was applied using the Benjamini–Hochberg procedure. Statistical significance was defined as a false discovery rate (FDR) < 0.05.
+### ZNF Peak-to-Gene and Local Locus Analysis
+ZNF-associated peak-to-gene links were identified using gene name matching. Links were filtered by correlation (>0.2), FDR (<0.05), and log2FC (>0.5).
 
----
+Genomic coordinates for ZNF genes were retrieved using biomaRt and extended by ±2 kb. Peaks overlapping these regions were classified as **local**, while others were classified as **distal**.
 
-## Feature Plot Analysis
-Feature visualization analysis was conducted using Seurat objects containing both module scores and gene expression data. The experimental design included eight conditions representing four training states (untrained, SYKi, MDP, BG) each with treated and untreated PMA stimulation. Module scores were extracted from Seurat metadata columns (ModuleScore*), while individual gene expression data were retrieved from the RNA assay slot. Cells were visualized using UMAP (Uniform Manifold Approximation and Projection) dimensionality reduction computed from the top 20 dimensions of CCA (Canonical Correlation Analysis) integrated data. Each point in the feature plots represents a single cell, positioned based on transcriptomic similarity. UMAP coordinates are displayed on x and y axes (UMAP_1 and UMAP_2), which capture the major sources of variation in the integrated dataset and allow visualization of cell populations in two-dimensional space. FeaturePlot visualizations were generated for each condition separately, with consistent scaling applied using 95th percentile cutoffs for modules and 99th percentile cutoffs for genes (except GZMB, which used 95th percentile). Violin plots were overlaid to show expression distributions, with median values calculated and displayed. Reference lines were drawn using median values from untrained conditions. Cell type labels were added and final plots combined condition panels and violin summaries.
+### Transcription Factor Motif Activity and Family Analysis
+TF motif activity was quantified using chromVAR deviation scores. Significant motifs were identified using Wilcoxon tests with BH correction (FDR < 0.05).
 
-## Circos Plot Generation
-Circular genome visualizations were created using the circlize package in R to display multiple genomic datasets simultaneously. Two complementary analyses were performed: (1) bin-based analysis displaying genome-wide Gene count data (Count_BG, Count_SKYi, Count_MDP) as bar tracks for CD4 TCM and CD14 monocyte cell types, and (2) HIV insertion site analysis combining point data from insertion coordinates, ATAC-seq peak data as vertical line segments, and gene count data as bar plots. Chromosomes were ordered sequentially (chr1-22, X, Y, M) with ideogram initialization. Data tracks maintained consistent y-axis scaling within each dataset type. Manual legends were incorporated to distinguish between data types and experimental conditions. All plots included proper chromosome-level normalization.
+TFs were mapped to families using the CisBP database. TFs were **aggregated irrespective of direction (up/down)** to assess overall family representation.
 
-## Genome Browser Visualization
-Multi-track genome browser visualizations were created to display ATAC-seq and single-cell RNA-seq data aligned to the HIV-1 genome (NC_001802.1). ATAC-seq peak data in BED format were processed to calculate cumulative scores at each genomic position, with separate tracks generated for each training condition (untrained, SYKi, MDP, BG) under PMA-treated conditions. Single-cell RNA-seq data were visualized as stacked gene expression tracks for four HIV genes (HIV1gp1, HIV1gp3, HIV1gp5, HIV1gp8). Gene annotations were extracted from GFF3 files and labeled. All tracks maintained consistent x-axis scaling across the full HIV genome length.
+### Feature Visualization
+Gene expression and module scores were visualized using FeaturePlot and violin plots. Expression values were quantile-scaled, and violin plots included median annotations and optional non-zero filtering.
 
-## Chromatin Peak–HIV Integration Overlap Framework
-Chromatin accessibility profiles were processed using ArchR, and peak–gene regulatory links were computed with addPeak2GeneLinks using the IterativeLSI embedding. This step produces statistically supported correlations between individual ATAC peaks and nearby genes, and only peak–gene links passing an FDR ≤ 0.05 threshold were retained. To characterize accessibility differences between training conditions (BG, MDP, SYKi) and Untrained cells, we performed differential peak analysis with getMarkerFeatures using a Wilcoxon test while correcting for TSSEnrichment and fragment count bias. Because the goal was to generate a comprehensive catalog of accessible regions where HIV integration might occur, we did not filter peaks based on differential accessibility significance (FDR); instead, we applied a minimal Log2FC threshold to remove extremely low-signal peaks. For each training condition, peak coordinates, accessibility metrics, and peak–gene link information were merged to generate condition-specific peak-to-gene tables.
+### Genome-wide Circos Visualization
+Genome-wide ATAC accessibility and HIV integration were visualized using circos plots. Accessibility was shown as radial bars, and integration sites were plotted as points.
 
-HIV integration coordinates were then intersected with this unified set of gene-linked peaks. Overlap was defined as an insertion occurring within the genomic boundaries of a peak (peak_start ≤ insertion ≤ peak_end). This allowed us to quantify how often HIV integrated into regulatory elements that were accessible in each training condition. Correlated and anti-correlated peak–gene pairs were further stratified using correlation thresholds (> 0.3 or < –0.3) and subjected to Reactome and Gene Ontology enrichment analysis using clusterProfiler and ReactomePA. Enrichment plots were exported in both PDF and SVG formats for integration into the manuscript.
+### Genome Browser Visualization
+HIV genome browser-style plots were generated by mapping ATAC-seq peaks and HIV gene annotations. Tracks were aligned across conditions and exported as PDF/SVG.
 
-Together, this workflow identifies accessible chromatin regions, links them to putative target genes, quantifies their behavior across trained and untrained states, and maps HIV insertion events onto these regulatory elements to assess preferential integration patterns.
-
-## ATAC-seq Peak-to-Gene and Locus-Level Accessibility Analysis of ZNF Transcription Factors (BG vs Untrained)
-ATAC-seq peak-to-gene linkage analysis was performed in ArchR to compare BG-trained versus untrained conditions, focusing on C2H2 zinc finger (ZNF) transcription factor loci. Peak–gene links generated using ArchR (addPeak2GeneLinks, getPeak2GeneLinks) were used as input (n = 1,884,255 total links). Peaks associated with ZNF genes (geneName matching “^ZNF”) were extracted (n = 38,231) and filtered for significance using correlation (>0.2), linkage FDR (FDR.y < 0.05), peak-level FDR (FDR.x < 0.05), and absolute log2 fold change (>0.5), yielding 198 significant peak-to-gene rows.
-
-To remove redundant mappings where multiple genes were linked to the same peak, peak-to-gene links were ranked by linkage FDR (FDR.y), and the most significant association was retained per unique peak using coordinate-based deduplication (dplyr::distinct), resulting in 144 unique ZNF-linked peaks. Linkage FDR (FDR.y) reflects the statistical significance of peak-to-gene associations, while peak-level FDR (FDR.x) reflects differential accessibility between BG and untrained conditions.
-
-To assess direct locus accessibility, ZNF gene coordinates were retrieved from Ensembl using biomaRt::getBM, expanded by ±2 kb, and converted to genomic ranges (GenomicRanges::GRanges). Peak coordinates were overlapped with ZNF loci using GenomicRanges::findOverlaps, identifying 21 peaks local to ZNF loci and 123 distal peaks. Differential accessibility at local loci was defined based on log2FC and FDR thresholds.
-
-This approach distinguishes distal regulatory associations from direct chromatin accessibility at ZNF gene loci while ensuring that each peak is represented by its most confident gene linkage.
+### Chromatin Peak–HIV Integration Overlap
+Peak-to-gene links and HIV integration sites were intersected to identify integration within accessible chromatin. Peak–gene associations were stratified by correlation and analyzed using pathway enrichment.
