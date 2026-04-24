@@ -1,3 +1,27 @@
+############################################################
+# ATAC-seq Peak-Gene Pathway Enrichment Analysis
+#
+# This script performs pathway enrichment analysis using genes linked
+# to differential ATAC-seq peaks. For each input file, peak-gene links
+# are filtered to retain accessible regions with positive differential
+# accessibility (Log2FC > 1.5), valid genomic coordinates, significant
+# peak-gene correlation FDR, and either positive or negative correlation
+# with nearby gene expression.
+#
+# Positively correlated genes are interpreted as genes whose expression
+# increases with increased chromatin accessibility, while negatively
+# correlated genes are retained separately as anti-correlated peak-gene
+# relationships. Gene symbols are converted to Entrez IDs, then tested
+# for pathway enrichment using ReactomePA and clusterProfiler GO
+# enrichment.
+#
+# The main manuscript figure currently emphasizes positively correlated
+# genes because these most directly support accessible regulatory regions
+# associated with increased gene activity. Reactome and GO pathway plots
+# are generated for each training condition and exported as PDF and SVG
+# files for manuscript use.
+############################################################
+
 # Load necessary libraries
 library(tidyverse)
 library(clusterProfiler)
