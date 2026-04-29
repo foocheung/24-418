@@ -4,12 +4,21 @@
 The labels are currently incorrect—**β-glucan (BG)** and **SYKi** appear to be switched and should be corrected.
 
 ### Missing clarification in text
-The manuscript does not state that only the **BG condition** yielded a sufficient number of significant peaks for downstream analysis.
+The manuscript does not state that only the **BG condition** yielded a sufficient number of significant peaks for downstream analysis (see below)
 
 ### Code availability
-Add in a link in the MS to the available analysis code is available at:  
+The analysis code is available at:  
 https://github.com/foocheung/24-418  
 
 ### Methods documentation
-The detailed methods write-up can be found at:  
+The methods section has been rewritten and expanded, including the addition of **20 references** covering the code, tools, and analytical frameworks used in this study.  
+
+The **BG condition is now explicitly described**, including how it was used in the peak-level **FDR correction and downstream filtering strategy**.  
+
+Additionally, for **peak-to-gene (peak2gene) analyses**, the methods now clarify that:
+- Significant peak-level signals were primarily observed in the **BG condition**,  
+- Other training conditions (SYKi, MDP) had limited peaks passing stringent FDR thresholds,  
+- Therefore, a **peak-to-gene linkage–based approach** was used to enable cross-condition comparisons by leveraging correlated accessibility rather than relying strictly on peak-level significance. :contentReference[oaicite:0]{index=0}  
+
+Full methods write-up:  
 https://github.com/foocheung/24-418/blob/main/Methods_v01.docx  
