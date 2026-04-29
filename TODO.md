@@ -1,4 +1,4 @@
-## Notes and Corrections
+## Notes and Corrections (In Progress)
 
 ### Figure labeling issue (Figure 5D–G)
 The labels are currently incorrect—**β-glucan (BG)** and **SYKi** appear to be switched and should be corrected.
