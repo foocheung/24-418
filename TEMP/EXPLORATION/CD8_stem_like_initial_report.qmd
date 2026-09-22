@@ -1,0 +1,990 @@
+---
+title: "Stem-like CD8 T-cell Analysis — Initial Report"
+subtitle: "Cell recovery and inclusive co-expression of the requested stem-like CD8 markers"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+params:
+  rds_path: "obj_mod.rds"
+---
+
+```{r}
+#| label: setup
+
+suppressPackageStartupMessages({
+  library(Seurat)
+  library(dplyr)
+  library(tidyr)
+  library(ggplot2)
+  library(fs)
+  library(ComplexHeatmap)
+  library(circlize)
+  library(grid)
+  library(knitr)
+})
+
+# ============================================================
+# INPUT — taken directly from the existing analysis script
+# ============================================================
+
+rds_path <- params$rds_path
+
+message("Reading: ", rds_path)
+
+if (!file.exists(rds_path)) {
+  stop(
+    paste0(
+      "Cannot find Seurat object: ", rds_path,
+      "\nThe original analysis script uses obj_mod.rds by default.",
+      "\nChange params:rds_path in this QMD if the object is elsewhere."
+    )
+  )
+}
+
+obj <- readRDS(rds_path)
+
+OUTDIR <- "CD8_STEM_INITIAL_REPORT"
+dir_create(OUTDIR)
+
+# ============================================================
+# EXPERIMENTAL DESIGN — copied from the existing script
+# ============================================================
+
+untreated_lanes <- c(
+  1, 3, 5, 7,
+  33, 35, 37, 39
+)
+
+treated_lanes <- c(
+  2, 4, 6, 8,
+  34, 36, 38, 40
+)
+
+untrained_lanes <- c(1, 2, 33, 34)
+SYKi_lanes      <- c(3, 4, 35, 36)
+MDP_lanes       <- c(5, 6, 37, 38)
+BG_lanes        <- c(7, 8, 39, 40)
+
+# ============================================================
+# REQUIRED METADATA
+# ============================================================
+
+if (!"Lane" %in% colnames(obj@meta.data)) {
+  stop("The object does not contain a metadata column named 'Lane'.")
+}
+
+if (!"predicted.celltype.l1" %in% colnames(obj@meta.data)) {
+  stop("The object does not contain predicted.celltype.l1.")
+}
+
+# ============================================================
+# NORMALIZE LANE NUMBER
+# ============================================================
+
+lane_character <- as.character(obj$Lane)
+
+lane_numeric <- suppressWarnings(
+  as.numeric(lane_character)
+)
+
+if (all(is.na(lane_numeric))) {
+  lane_numeric <- suppressWarnings(
+    as.numeric(
+      gsub("\\D+", "", lane_character)
+    )
+  )
+}
+
+obj$Lane_numeric <- lane_numeric
+
+# ============================================================
+# CREATE TREATMENT / TRAINING METADATA
+# ============================================================
+
+obj$Treatment <- case_when(
+  obj$Lane_numeric %in% untreated_lanes ~ "Untreated",
+  obj$Lane_numeric %in% treated_lanes   ~ "Treated",
+  TRUE ~ NA_character_
+)
+
+obj$LaneGroup <- case_when(
+  obj$Lane_numeric %in% untrained_lanes ~ "untrained",
+  obj$Lane_numeric %in% SYKi_lanes      ~ "SYKi",
+  obj$Lane_numeric %in% MDP_lanes       ~ "MDP",
+  obj$Lane_numeric %in% BG_lanes        ~ "BG",
+  TRUE ~ NA_character_
+)
+
+obj$Treatment <- factor(
+  obj$Treatment,
+  levels = c("Untreated", "Treated")
+)
+
+obj$LaneGroup <- factor(
+  obj$LaneGroup,
+  levels = c("untrained", "SYKi", "MDP", "BG")
+)
+
+obj$LaneGroup_Treatment <- paste(
+  as.character(obj$LaneGroup),
+  as.character(obj$Treatment),
+  sep = "_"
+)
+
+obj$LaneGroup_Treatment <- factor(
+  obj$LaneGroup_Treatment,
+  levels = c(
+    "untrained_Untreated",
+    "untrained_Treated",
+    "SYKi_Untreated",
+    "SYKi_Treated",
+    "MDP_Untreated",
+    "MDP_Treated",
+    "BG_Untreated",
+    "BG_Treated"
+  )
+)
+
+# ============================================================
+# GENES
+# ============================================================
+
+stem_genes <- c(
+  "TCF7",
+  "PDCD1",
+  "SLAMF6",
+  "CD28",
+  "CCR7",
+  "SELL"
+)
+
+comparison_gene <- "IFNG"
+all_genes <- c(stem_genes, comparison_gene)
+
+# ============================================================
+# IDENTIFY / SUBSET CD8 CELLS
+# ============================================================
+
+cd8_labels <- unique(
+  as.character(
+    obj$predicted.celltype.l1[
+      grepl(
+        "CD8",
+        obj$predicted.celltype.l1,
+        ignore.case = TRUE
+      )
+    ]
+  )
+)
+
+cd8_labels <- cd8_labels[!is.na(cd8_labels)]
+
+if (length(cd8_labels) == 0) {
+  stop("No CD8 labels were found in predicted.celltype.l1.")
+}
+
+cd8 <- subset(
+  obj,
+  subset = predicted.celltype.l1 %in% cd8_labels
+)
+
+if (ncol(cd8) == 0) {
+  stop("CD8 subset contains zero cells.")
+}
+
+DefaultAssay(cd8) <- "RNA"
+
+# ============================================================
+# CHECK REQUESTED GENES
+# ============================================================
+
+gene_check <- data.frame(
+  Gene = all_genes,
+  Present = all_genes %in% rownames(cd8[["RNA"]])
+)
+
+missing_genes <- gene_check$Gene[!gene_check$Present]
+
+if (length(missing_genes) > 0) {
+  stop(
+    "Missing genes: ",
+    paste(missing_genes, collapse = ", ")
+  )
+}
+
+# ============================================================
+# CREATE CELL-LEVEL DATA — same approach as original script
+# ============================================================
+
+cell_data <- FetchData(
+  cd8,
+  vars = c(
+    all_genes,
+    "Lane_numeric",
+    "LaneGroup",
+    "Treatment",
+    "LaneGroup_Treatment"
+  )
+)
+
+GROUP_COL <- "LaneGroup_Treatment"
+
+TREATMENT_LEVELS <- c(
+  "untrained_Untreated",
+  "untrained_Treated",
+  "SYKi_Untreated",
+  "SYKi_Treated",
+  "MDP_Untreated",
+  "MDP_Treated",
+  "BG_Untreated",
+  "BG_Treated"
+)
+
+cell_data[[GROUP_COL]] <- factor(
+  cell_data[[GROUP_COL]],
+  levels = TREATMENT_LEVELS
+)
+
+combo_binary <- cell_data %>%
+  filter(
+    !is.na(.data[[GROUP_COL]]),
+    .data[[GROUP_COL]] %in% TREATMENT_LEVELS
+  ) %>%
+  mutate(
+    across(all_of(stem_genes), ~ .x > 0)
+  )
+```
+
+# Overview
+
+The question is whether the CD8 scRNA-seq data contain cells with a transcriptional phenotype corresponding to the stem-like markers requested in the email:
+
+**TCF1+, PD-1+, SLAMF6+, CD28+**, with possible **CCR7+ and/or CD62L+** characteristics.
+
+For the scRNA-seq analysis, the corresponding genes are:
+
+| Protein marker | RNA proxy |
+|---|---|
+| TCF1 | **TCF7** |
+| PD-1 | **PDCD1** |
+| SLAMF6 | **SLAMF6** |
+| CD28 | **CD28** |
+| CCR7 | **CCR7** |
+| CD62L | **SELL** |
+
+The purpose of this initial report is to determine:
+
+1. whether sufficient CD8 cells were recovered in each experimental condition;
+2. how many cells satisfy the requested marker combinations using **inclusive co-expression**;
+3. whether the requested multi-marker populations are sufficiently represented for group-level analysis.
+
+> **Practical analysis criterion:** For this type of cell-population comparison, we typically prefer **more than 100 cells per cell population in each group under analysis**. Populations substantially below this level are considered too sparsely represented for a robust group-level comparison in this initial analysis.
+
+A further biological consideration is that several of these markers reflect a naïve/stem-like state; **PMA strongly activates T cells and can downregulate or alter this transcriptional program**, so loss of the RNA-defined combination after stimulation does not necessarily mean loss of the underlying cells.
+
+> **Important limitation:** CITE-seq was not performed for these markers. The analysis therefore measures RNA co-detection rather than the protein-defined TCF1+ PD-1+ SLAMF6+ CD28+ phenotype.
+
+# 1. Cell recovery before phenotype interpretation
+
+The original analysis correctly examines cell recovery before interpreting phenotype frequencies. Lower numbers of recovered cells should not automatically be interpreted as cell death.
+
+```{r}
+#| label: recovery-analysis
+
+all_cell_recovery_lane <- obj@meta.data %>%
+  filter(
+    !is.na(Lane_numeric),
+    !is.na(Treatment),
+    !is.na(LaneGroup)
+  ) %>%
+  group_by(
+    Lane_numeric,
+    LaneGroup,
+    Treatment
+  ) %>%
+  summarise(
+    Total_cells = n(),
+    .groups = "drop"
+  )
+
+cd8_cell_recovery_lane <- cd8@meta.data %>%
+  filter(
+    !is.na(Lane_numeric),
+    !is.na(Treatment),
+    !is.na(LaneGroup)
+  ) %>%
+  group_by(
+    Lane_numeric,
+    LaneGroup,
+    Treatment
+  ) %>%
+  summarise(
+    CD8_cells = n(),
+    .groups = "drop"
+  )
+
+recovery_by_lane <- all_cell_recovery_lane %>%
+  left_join(
+    cd8_cell_recovery_lane,
+    by = c(
+      "Lane_numeric",
+      "LaneGroup",
+      "Treatment"
+    )
+  ) %>%
+  mutate(
+    CD8_cells = ifelse(is.na(CD8_cells), 0, CD8_cells),
+    Percent_CD8 = 100 * CD8_cells / Total_cells
+  )
+
+all_recovery_summary <- obj@meta.data %>%
+  filter(
+    !is.na(Treatment),
+    !is.na(LaneGroup)
+  ) %>%
+  group_by(
+    LaneGroup,
+    Treatment
+  ) %>%
+  summarise(
+    Total_cells = n(),
+    .groups = "drop"
+  )
+
+cd8_recovery_summary <- cd8@meta.data %>%
+  filter(
+    !is.na(Treatment),
+    !is.na(LaneGroup)
+  ) %>%
+  group_by(
+    LaneGroup,
+    Treatment
+  ) %>%
+  summarise(
+    CD8_cells = n(),
+    .groups = "drop"
+  )
+
+recovery_summary <- all_recovery_summary %>%
+  left_join(
+    cd8_recovery_summary,
+    by = c("LaneGroup", "Treatment")
+  ) %>%
+  mutate(
+    CD8_cells = ifelse(is.na(CD8_cells), 0, CD8_cells),
+    Percent_CD8 = 100 * CD8_cells / Total_cells
+  )
+
+write.csv(
+  recovery_by_lane,
+  file.path(OUTDIR, "00_cell_recovery_by_lane.csv"),
+  row.names = FALSE
+)
+
+write.csv(
+  recovery_summary,
+  file.path(OUTDIR, "00_cell_recovery_summary.csv"),
+  row.names = FALSE
+)
+
+kable(
+  recovery_summary,
+  digits = 1,
+  caption = "Recovered cells and CD8 representation by condition"
+)
+```
+
+```{r}
+#| label: cd8-recovery-plot
+#| fig-width: 11
+#| fig-height: 6
+
+p_recovery_summary <- ggplot(
+  recovery_summary,
+  aes(
+    x = LaneGroup,
+    y = CD8_cells,
+    fill = Treatment
+  )
+) +
+  geom_col(
+    position = position_dodge(width = 0.8),
+    width = 0.7
+  ) +
+  geom_text(
+    aes(
+      label = paste0(
+        format(CD8_cells, big.mark = ","),
+        "\n(",
+        round(Percent_CD8, 1),
+        "% of recovered)"
+      )
+    ),
+    position = position_dodge(width = 0.8),
+    vjust = -0.25,
+    size = 3.5
+  ) +
+  labs(
+    title = "CD8 cell recovery before phenotype analysis",
+    subtitle = "Absolute CD8 N with percentage of all recovered cells",
+    x = "Training condition",
+    y = "Number of recovered CD8 cells",
+    fill = "Treatment"
+  ) +
+  theme_classic(base_size = 14) +
+  expand_limits(
+    y = max(recovery_summary$CD8_cells, na.rm = TRUE) * 1.18
+  )
+
+p_recovery_summary
+```
+
+### Comment on cell recovery
+
+The treated samples contain consistently fewer recovered CD8 cells than the corresponding untreated samples. In the current data, untreated groups contain approximately **8,300–9,100 CD8 cells**, whereas treated groups contain approximately **2,800–3,600 CD8 cells**. CD8 cells also represent a lower fraction of all recovered cells in treated samples (**13.4–15.3%**) than in untreated samples (**32.6–36.6%**).
+
+This difference is important for the interpretation of the co-expression analysis. **Absolute numbers of marker-positive cells should not be compared by themselves across untreated and treated groups.** The percentage of CD8 cells carrying each phenotype is therefore shown together with the cell count in the heatmap. At this stage, the recovery difference should be treated as a sampling/recovery consideration rather than interpreted as evidence of CD8-cell loss.
+
+# 2. Inclusive co-expression heatmap
+
+This is the main first-report figure.
+
+These are **inclusive combinations**. For example:
+
+**TCF7 + CD28 + CCR7 + SELL**
+
+means that a cell is positive for all four transcripts, regardless of whether **PDCD1** or **SLAMF6** are also detected.
+
+Therefore:
+
+**n(TCF7 + CD28 + CCR7 + SELL) ≤ n(TCF7)**
+
+must always be true.
+
+```{r}
+#| label: inclusive-heatmap
+#| fig-width: 13
+#| fig-height: 10
+
+inclusive_combos <- list(
+  "TCF7" =
+    c("TCF7"),
+
+  "PDCD1" =
+    c("PDCD1"),
+
+  "SLAMF6" =
+    c("SLAMF6"),
+
+  "CD28" =
+    c("CD28"),
+
+  "CCR7" =
+    c("CCR7"),
+
+  "SELL" =
+    c("SELL"),
+
+  "TCF7 + SLAMF6" =
+    c("TCF7", "SLAMF6"),
+
+  "TCF7 + CD28" =
+    c("TCF7", "CD28"),
+
+  "TCF7 + CCR7" =
+    c("TCF7", "CCR7"),
+
+  "TCF7 + SELL" =
+    c("TCF7", "SELL"),
+
+  "TCF7 + PDCD1" =
+    c("TCF7", "PDCD1"),
+
+  "TCF7 + SLAMF6 + CD28" =
+    c("TCF7", "SLAMF6", "CD28"),
+
+  "TCF7 + CD28 + CCR7" =
+    c("TCF7", "CD28", "CCR7"),
+
+  "TCF7 + CD28 + SELL" =
+    c("TCF7", "CD28", "SELL"),
+
+  "TCF7 + CCR7 + SELL" =
+    c("TCF7", "CCR7", "SELL"),
+
+  "TCF7 + SLAMF6 + CCR7" =
+    c("TCF7", "SLAMF6", "CCR7"),
+
+  "TCF7 + SLAMF6 + SELL" =
+    c("TCF7", "SLAMF6", "SELL"),
+
+  "TCF7 + SLAMF6 + CD28 + CCR7" =
+    c("TCF7", "SLAMF6", "CD28", "CCR7"),
+
+  "TCF7 + SLAMF6 + CD28 + SELL" =
+    c("TCF7", "SLAMF6", "CD28", "SELL"),
+
+  "TCF7 + SLAMF6 + CD28 + CCR7 + SELL" =
+    c("TCF7", "SLAMF6", "CD28", "CCR7", "SELL"),
+
+  "TCF7 + PDCD1 + SLAMF6 + CD28" =
+    c("TCF7", "PDCD1", "SLAMF6", "CD28"),
+
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + CCR7" =
+    c("TCF7", "PDCD1", "SLAMF6", "CD28", "CCR7"),
+
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + SELL" =
+    c("TCF7", "PDCD1", "SLAMF6", "CD28", "SELL"),
+
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + CCR7 + SELL" =
+    c("TCF7", "PDCD1", "SLAMF6", "CD28", "CCR7", "SELL")
+)
+
+count_inclusive_combo <- function(df, markers) {
+  marker_matrix <- as.matrix(
+    df[, markers, drop = FALSE]
+  )
+
+  sum(
+    rowSums(marker_matrix) ==
+      length(markers)
+  )
+}
+
+inclusive_list <- lapply(
+  TREATMENT_LEVELS,
+  function(grp) {
+
+    df_grp <- combo_binary %>%
+      filter(
+        .data[[GROUP_COL]] == grp
+      )
+
+    total_cells <- nrow(df_grp)
+
+    counts <- vapply(
+      inclusive_combos,
+      function(markers) {
+        count_inclusive_combo(
+          df_grp,
+          markers
+        )
+      },
+      numeric(1)
+    )
+
+    data.frame(
+      Treatment = grp,
+      Combination = names(counts),
+      Cells = as.numeric(counts),
+      Percent_CD8 =
+        if (total_cells > 0) {
+          100 * as.numeric(counts) / total_cells
+        } else {
+          NA_real_
+        },
+      Total_CD8 = total_cells,
+      stringsAsFactors = FALSE
+    )
+  }
+)
+
+inclusive_long <- bind_rows(
+  inclusive_list
+)
+
+# ============================================================
+# SANITY CHECK
+# Every TCF7-containing combination must be <= total TCF7+
+# ============================================================
+
+sanity_check <- inclusive_long %>%
+  group_by(Treatment) %>%
+  mutate(
+    TCF7_total =
+      Cells[
+        Combination == "TCF7"
+      ]
+  ) %>%
+  filter(
+    grepl(
+      "TCF7",
+      Combination
+    )
+  ) %>%
+  mutate(
+    Valid =
+      Cells <= TCF7_total
+  ) %>%
+  ungroup()
+
+if (any(!sanity_check$Valid)) {
+  stop(
+    paste(
+      "ERROR:",
+      "An inclusive combination containing TCF7",
+      "has more cells than total TCF7+ cells."
+    )
+  )
+}
+
+write.csv(
+  inclusive_long,
+  file.path(
+    OUTDIR,
+    "03_inclusive_marker_combinations_all_groups.csv"
+  ),
+  row.names = FALSE
+)
+
+combo_totals <- inclusive_long %>%
+  group_by(Combination) %>%
+  summarise(
+    Total_Cells_AllGroups =
+      sum(Cells),
+    .groups = "drop"
+  ) %>%
+  arrange(
+    desc(Total_Cells_AllGroups)
+  )
+
+HEATMAP_TOP_N_COMBOS <- 20
+
+top_combos <- head(
+  combo_totals$Combination,
+  HEATMAP_TOP_N_COMBOS
+)
+
+mat2_pct_df <- inclusive_long %>%
+  filter(
+    Combination %in% top_combos
+  ) %>%
+  select(
+    Treatment,
+    Combination,
+    Percent_CD8
+  ) %>%
+  pivot_wider(
+    names_from = Treatment,
+    values_from = Percent_CD8,
+    values_fill = 0
+  )
+
+mat2_cells_df <- inclusive_long %>%
+  filter(
+    Combination %in% top_combos
+  ) %>%
+  select(
+    Treatment,
+    Combination,
+    Cells
+  ) %>%
+  pivot_wider(
+    names_from = Treatment,
+    values_from = Cells,
+    values_fill = 0
+  )
+
+mat2_pct_df <- mat2_pct_df[
+  match(
+    top_combos,
+    mat2_pct_df$Combination
+  ),
+]
+
+mat2_cells_df <- mat2_cells_df[
+  match(
+    top_combos,
+    mat2_cells_df$Combination
+  ),
+]
+
+group_cols <- intersect(
+  TREATMENT_LEVELS,
+  colnames(mat2_pct_df)
+)
+
+mat2 <- as.matrix(
+  mat2_pct_df[
+    ,
+    group_cols,
+    drop = FALSE
+  ]
+)
+
+mat2_cells <- as.matrix(
+  mat2_cells_df[
+    ,
+    group_cols,
+    drop = FALSE
+  ]
+)
+
+rownames(mat2) <-
+  mat2_pct_df$Combination
+
+rownames(mat2_cells) <-
+  mat2_cells_df$Combination
+
+max_pct <- max(
+  mat2,
+  na.rm = TRUE
+)
+
+if (
+  !is.finite(max_pct) ||
+  max_pct <= 0
+) {
+  max_pct <- 1
+}
+
+col_fun2 <- circlize::colorRamp2(
+  c(
+    0,
+    max_pct / 2,
+    max_pct
+  ),
+  c(
+    "white",
+    "steelblue",
+    "darkblue"
+  )
+)
+
+ht2 <- Heatmap(
+  mat2,
+  name = "% of group",
+  col = col_fun2,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  row_names_side = "left",
+  row_names_max_width =
+    unit(11, "cm"),
+  column_title =
+    paste0(
+      "Top ",
+      nrow(mat2),
+      " INCLUSIVE marker combinations (% and n of group's CD8 cells)"
+    ),
+  column_title_gp =
+    gpar(
+      fontsize = 14,
+      fontface = "bold"
+    ),
+  cell_fun =
+    function(
+      j,
+      i,
+      x,
+      y,
+      width,
+      height,
+      fill
+    ) {
+
+      grid.text(
+        paste0(
+          format(
+            mat2_cells[i, j],
+            big.mark = ","
+          ),
+          "\n(",
+          sprintf(
+            "%.1f",
+            mat2[i, j]
+          ),
+          "%)"
+        ),
+        x,
+        y,
+        gp =
+          gpar(
+            fontsize = 6.5,
+            lineheight = 0.85
+          )
+      )
+    },
+  rect_gp =
+    gpar(
+      col = "grey80",
+      lwd = 0.5
+    )
+)
+
+draw(ht2)
+
+write.csv(
+  mat2_cells_df %>%
+    rename_with(
+      ~ paste0("Cells_", .x),
+      all_of(group_cols)
+    ) %>%
+    left_join(
+      mat2_pct_df %>%
+        rename_with(
+          ~ paste0("Pct_", .x),
+          all_of(group_cols)
+        ),
+      by = "Combination"
+    ),
+  file.path(
+    OUTDIR,
+    "03_inclusive_heatmap_data.csv"
+  ),
+  row.names = FALSE
+)
+```
+
+### Comment on inclusive co-expression
+
+The heatmap separates two important observations.
+
+First, the **TCF7 + SLAMF6 + CD28 + CCR7 + SELL** phenotype **without PDCD1** is well represented in every untreated group: **482 cells (5.3%) in untrained, 629 (7.2%) in SYKi, 494 (5.9%) in MDP, and 382 (4.6%) in BG**. These untreated populations are above the **>100 cells per population per group** that we typically prefer for this type of group-level analysis. SYKi_Untreated has the highest observed representation of this five-marker phenotype, although this heatmap alone does not establish that the difference is statistically or biologically significant.
+
+Second, this same five-marker phenotype is essentially absent after treatment/PMA (**0, 0, 1, and 0 cells**, respectively). In contrast, **PDCD1 is more frequently detected in the treated groups**, while CCR7/SELL-containing stem-like or naïve-associated combinations collapse after stimulation. Thus, the limiting feature for the **originally requested phenotype** is the requirement for simultaneous **PDCD1** expression with the TCF7/SLAMF6/CD28/CCR7/SELL program, not a general absence of the stem-like/naïve-associated cells before stimulation.
+
+**PMA is a strong activation stimulus and is expected to alter/downregulate naïve or stem-like transcriptional features such as CCR7/SELL/TCF7, so the near-loss of this RNA-defined phenotype after stimulation should not be interpreted as physical disappearance of the underlying cells.**
+
+# 3. Summary
+
+This section summarizes the main first-pass findings from the cell-recovery analysis and the inclusive co-expression analysis above.
+
+```{r}
+#| label: v1-summary
+#| results: asis
+
+five_no_pdcd1_name <-
+  "TCF7 + SLAMF6 + CD28 + CCR7 + SELL"
+
+core_name <-
+  "TCF7 + PDCD1 + SLAMF6 + CD28"
+
+core_ccr7_name <-
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + CCR7"
+
+core_sell_name <-
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + SELL"
+
+all6_name <-
+  "TCF7 + PDCD1 + SLAMF6 + CD28 + CCR7 + SELL"
+
+five_no_pdcd1_tbl <- inclusive_long %>%
+  filter(Combination == five_no_pdcd1_name)
+
+core_tbl <- inclusive_long %>%
+  filter(Combination == core_name)
+
+core_ccr7_tbl <- inclusive_long %>%
+  filter(Combination == core_ccr7_name)
+
+core_sell_tbl <- inclusive_long %>%
+  filter(Combination == core_sell_name)
+
+all6_tbl <- inclusive_long %>%
+  filter(Combination == all6_name)
+
+cat(
+  "A total of **",
+  format(ncol(cd8), big.mark = ","),
+  " CD8 cells** were identified from `predicted.celltype.l1` and included in this initial analysis.\n\n",
+  sep = ""
+)
+
+if (nrow(five_no_pdcd1_tbl) > 0) {
+  untreated_five <- five_no_pdcd1_tbl %>%
+    filter(grepl("_Untreated$", Treatment))
+
+  treated_five <- five_no_pdcd1_tbl %>%
+    filter(grepl("_Treated$", Treatment))
+
+  cat(
+    "The **TCF7 + SLAMF6 + CD28 + CCR7 + SELL** phenotype without PDCD1 is well represented before PMA/treatment, ",
+    "with **",
+    min(untreated_five$Cells, na.rm = TRUE),
+    " to ",
+    max(untreated_five$Cells, na.rm = TRUE),
+    " cells per untreated group**. ",
+    "After treatment/PMA, the same phenotype falls to **",
+    min(treated_five$Cells, na.rm = TRUE),
+    " to ",
+    max(treated_five$Cells, na.rm = TRUE),
+    " cells per group**.\n\n",
+    sep = ""
+  )
+}
+
+if (nrow(core_tbl) > 0) {
+  cat(
+    "For the requested RNA-defined core phenotype (**TCF7 + PDCD1 + SLAMF6 + CD28**), ",
+    "group-level frequencies range from **",
+    sprintf("%.3f", min(core_tbl$Percent_CD8, na.rm = TRUE)),
+    "% to ",
+    sprintf("%.3f", max(core_tbl$Percent_CD8, na.rm = TRUE)),
+    "%**, corresponding to **",
+    min(core_tbl$Cells, na.rm = TRUE),
+    " to ",
+    max(core_tbl$Cells, na.rm = TRUE),
+    " cells per group**.\n\n",
+    sep = ""
+  )
+}
+
+if (nrow(core_ccr7_tbl) > 0) {
+  cat(
+    "When **CCR7** is added to the requested four-marker phenotype, the observed frequencies range from **",
+    sprintf("%.3f", min(core_ccr7_tbl$Percent_CD8, na.rm = TRUE)),
+    "% to ",
+    sprintf("%.3f", max(core_ccr7_tbl$Percent_CD8, na.rm = TRUE)),
+    "%** across groups.\n\n",
+    sep = ""
+  )
+}
+
+if (nrow(core_sell_tbl) > 0) {
+  cat(
+    "When **SELL (CD62L)** is added to the requested four-marker phenotype, the observed frequencies range from **",
+    sprintf("%.3f", min(core_sell_tbl$Percent_CD8, na.rm = TRUE)),
+    "% to ",
+    sprintf("%.3f", max(core_sell_tbl$Percent_CD8, na.rm = TRUE)),
+    "%** across groups.\n\n",
+    sep = ""
+  )
+}
+
+if (nrow(all6_tbl) > 0) {
+  cat(
+    "When all six transcripts are required simultaneously, group-level frequencies range from **",
+    sprintf("%.3f", min(all6_tbl$Percent_CD8, na.rm = TRUE)),
+    "% to ",
+    sprintf("%.3f", max(all6_tbl$Percent_CD8, na.rm = TRUE)),
+    "%**, corresponding to **",
+    min(all6_tbl$Cells, na.rm = TRUE),
+    " to ",
+    max(all6_tbl$Cells, na.rm = TRUE),
+    " cells per group**.\n\n",
+    sep = ""
+  )
+}
+
+cat(
+  "For this type of group-level cell-population analysis, we typically prefer **more than 100 cells per population in each group under analysis**. ",
+  "The five-marker **TCF7 + SLAMF6 + CD28 + CCR7 + SELL** population meets this practical criterion in every untreated group, ",
+  "but it is essentially absent after treatment/PMA. ",
+  "The originally requested phenotype that also requires **PDCD1** is much more sparsely represented and does not provide sufficient cell numbers for a robust multi-group comparison. ",
+  "Therefore, the data support a sizeable pre-stimulation TCF7/SLAMF6/CD28/CCR7/SELL population, while simultaneous PDCD1 expression is the limiting feature of the requested phenotype. ",
+  "Because PMA strongly alters activation state and naïve/stem-like transcriptional markers, the treated-versus-untreated difference should be interpreted as a change in RNA-defined phenotype rather than evidence that the cells themselves disappeared."
+)
+```
+
+# Interpretation limitation
+
+Because these are RNA measurements after stimulation and not CITE-seq protein measurements, the results should initially be described as a **stem-like CD8-associated transcriptional phenotype**. A low count for a strict multi-marker combination may reflect true rarity, sparse transcript detection, stimulation-associated transcriptional changes, or a combination of these factors.
