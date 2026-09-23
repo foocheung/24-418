@@ -1,0 +1,923 @@
+---
+title: "CD8 Stem-like Analysis — Step 2: Subject-level Statistics and Marker Expression"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+
+suppressPackageStartupMessages({
+  library(Seurat)
+  library(dplyr)
+  library(tidyr)
+  library(ggplot2)
+  library(edgeR)
+  library(limma)
+  library(knitr)
+})
+
+args <- commandArgs(trailingOnly = TRUE)
+rds_path <- if (length(args) >= 1) args[1] else "obj_mod.rds"
+
+message("Reading: ", rds_path)
+obj <- readRDS(rds_path)
+
+# Check required metadata
+if (!"Lane" %in% colnames(obj@meta.data)) {
+  stop("The object does not contain Lane.")
+}
+
+if (!"predicted.celltype.l1" %in% colnames(obj@meta.data)) {
+  stop("The object does not contain predicted.celltype.l1.")
+}
+
+if (!"sCALL" %in% colnames(obj@meta.data)) {
+  stop("The object does not contain subject column sCALL.")
+}
+
+# Lane definitions
+untreated_lanes <- c(1, 3, 5, 7, 33, 35, 37, 39)
+treated_lanes   <- c(2, 4, 6, 8, 34, 36, 38, 40)
+
+untrained_lanes <- c(1, 2, 33, 34)
+SYKi_lanes      <- c(3, 4, 35, 36)
+MDP_lanes       <- c(5, 6, 37, 38)
+BG_lanes        <- c(7, 8, 39, 40)
+
+# Convert Lane to numeric
+obj$Lane_numeric <- suppressWarnings(
+  as.numeric(as.character(obj$Lane))
+)
+
+# Treatment assignment
+obj$Treatment <- case_when(
+  obj$Lane_numeric %in% untreated_lanes ~ "Untreated",
+  obj$Lane_numeric %in% treated_lanes   ~ "Treated",
+  TRUE ~ NA_character_
+)
+
+# Training assignment
+obj$LaneGroup <- case_when(
+  obj$Lane_numeric %in% untrained_lanes ~ "untrained",
+  obj$Lane_numeric %in% SYKi_lanes      ~ "SYKi",
+  obj$Lane_numeric %in% MDP_lanes       ~ "MDP",
+  obj$Lane_numeric %in% BG_lanes        ~ "BG",
+  TRUE ~ NA_character_
+)
+
+obj$Treatment <- factor(
+  obj$Treatment,
+  levels = c("Untreated", "Treated")
+)
+
+obj$LaneGroup <- factor(
+  obj$LaneGroup,
+  levels = c("untrained", "SYKi", "MDP", "BG")
+)
+
+# Identify Monaco-defined CD8 labels
+cd8_labels <- unique(
+  obj$predicted.celltype.l1[
+    grepl(
+      "CD8",
+      obj$predicted.celltype.l1,
+      ignore.case = TRUE
+    )
+  ]
+)
+
+cat(
+  "CD8 labels used:",
+  paste(cd8_labels, collapse = ", "),
+  "\n"
+)
+
+# Subset CD8 cells
+cd8 <- subset(
+  obj,
+  subset = predicted.celltype.l1 %in% cd8_labels
+)
+
+DefaultAssay(cd8) <- "RNA"
+
+cat(
+  "Total Monaco-defined CD8 cells:",
+  format(ncol(cd8), big.mark = ","),
+  "\n"
+)
+
+# Predefined marker panel
+genes_to_test <- c(
+  "TCF7",
+  "PDCD1",
+  "SLAMF6",
+  "CD28",
+  "CCR7",
+  "SELL"
+)
+
+# Five-transcript population excluding PDCD1
+five_genes <- c(
+  "TCF7",
+  "SLAMF6",
+  "CD28",
+  "CCR7",
+  "SELL"
+)
+
+trained_conditions <- c(
+  "SYKi",
+  "MDP",
+  "BG"
+)
+
+# Check genes
+missing_genes <- setdiff(
+  genes_to_test,
+  rownames(cd8[["RNA"]])
+)
+
+if (length(missing_genes) > 0) {
+  stop(
+    "Missing requested RNA genes: ",
+    paste(missing_genes, collapse = ", ")
+  )
+}
+```
+
+# 1. Statistical analysis of the five-transcript CD8 population
+
+This analysis tests whether the proportion of Monaco-defined CD8 cells with simultaneous detection of **TCF7, SLAMF6, CD28, CCR7, and SELL RNA** differs between untrained cells and each of the three pre-PMA training conditions (SYKi, MDP, BG).
+
+```{r}
+#| label: cell-proportion-data
+#| fig-width: 8
+#| fig-height: 5
+
+expr <- FetchData(
+  cd8,
+  vars = c(
+    five_genes,
+    "sCALL",
+    "Treatment",
+    "LaneGroup"
+  )
+)
+
+prepma_subject <- expr %>%
+  filter(
+    Treatment == "Untreated",
+    LaneGroup %in% c("untrained", trained_conditions),
+    !is.na(sCALL)
+  ) %>%
+  mutate(
+    Five_marker =
+      rowSums(
+        as.matrix(
+          across(all_of(five_genes)) > 0
+        )
+      ) == length(five_genes)
+  ) %>%
+  group_by(
+    sCALL,
+    LaneGroup
+  ) %>%
+  summarise(
+    Total_CD8 = n(),
+    Five_marker_cells = sum(Five_marker),
+    Percent_CD8 = 100 * Five_marker_cells / Total_CD8,
+    .groups = "drop"
+  ) %>%
+  mutate(
+    LaneGroup = factor(
+      LaneGroup,
+      levels = c(
+        "untrained",
+        trained_conditions
+      )
+    )
+  )
+
+kable(
+  prepma_subject,
+  digits = 2,
+  caption = "Pre-PMA five-transcript CD8 population by subject"
+)
+
+ggplot(
+  prepma_subject,
+  aes(
+    x = LaneGroup,
+    y = Percent_CD8,
+    group = sCALL
+  )
+) +
+  geom_line(alpha = 0.65) +
+  geom_point(size = 3) +
+  labs(
+    title = "Pre-PMA five-transcript CD8 population by subject",
+    subtitle = "Simultaneous TCF7, SLAMF6, CD28, CCR7, and SELL RNA detection",
+    x = NULL,
+    y = "% of Monaco-defined CD8 cells"
+  ) +
+  theme_bw(base_size = 12)
+```
+
+# 2. Overall pre-PMA comparison
+
+```{r}
+#| label: cell-proportion-overall-friedman
+
+complete_subjects <- prepma_subject %>%
+  select(
+    sCALL,
+    LaneGroup,
+    Percent_CD8
+  ) %>%
+  pivot_wider(
+    names_from = LaneGroup,
+    values_from = Percent_CD8
+  ) %>%
+  filter(
+    complete.cases(
+      untrained,
+      SYKi,
+      MDP,
+      BG
+    )
+  )
+
+cat(
+  "Subjects with complete data for all four conditions:",
+  nrow(complete_subjects),
+  "\n"
+)
+
+if (nrow(complete_subjects) >= 2) {
+  
+  friedman_long <- complete_subjects %>%
+    pivot_longer(
+      cols = c(
+        untrained,
+        SYKi,
+        MDP,
+        BG
+      ),
+      names_to = "Condition",
+      values_to = "Percent_CD8"
+    )
+  
+  friedman_result <- friedman.test(
+    Percent_CD8 ~ Condition | sCALL,
+    data = friedman_long
+  )
+  
+  cat(
+    "Overall Friedman test across the four pre-PMA conditions: p = ",
+    signif(friedman_result$p.value, 4),
+    "\n",
+    sep = ""
+  )
+  
+} else {
+  
+  cat(
+    "Not enough complete subjects for the Friedman test.\n"
+  )
+}
+```
+
+## Paired comparisons versus untrained
+
+```{r}
+#| label: cell-proportion-paired-comparisons
+
+run_proportion_paired_test <- function(
+  condition,
+  baseline = "untrained"
+) {
+  
+  pair_df <- prepma_subject %>%
+    filter(
+      LaneGroup %in% c(
+        baseline,
+        condition
+      )
+    ) %>%
+    select(
+      sCALL,
+      LaneGroup,
+      Percent_CD8
+    ) %>%
+    pivot_wider(
+      names_from = LaneGroup,
+      values_from = Percent_CD8
+    ) %>%
+    filter(
+      complete.cases(
+        .data[[baseline]],
+        .data[[condition]]
+      )
+    ) %>%
+    mutate(
+      Difference_pct_points =
+        .data[[condition]] -
+        .data[[baseline]]
+    )
+  
+  if (nrow(pair_df) < 2) {
+    
+    return(
+      list(
+        condition = condition,
+        pair_df = pair_df,
+        wilcox = NULL,
+        limma = NULL
+      )
+    )
+  }
+  
+  wilcox_result <- wilcox.test(
+    pair_df[[condition]],
+    pair_df[[baseline]],
+    paired = TRUE,
+    exact = FALSE
+  )
+  
+  limma_df <- prepma_subject %>%
+    filter(
+      LaneGroup %in% c(
+        baseline,
+        condition
+      )
+    ) %>%
+    mutate(
+      sCALL = factor(sCALL),
+      LaneGroup = factor(
+        LaneGroup,
+        levels = c(
+          baseline,
+          condition
+        )
+      )
+    ) %>%
+    arrange(
+      sCALL,
+      LaneGroup
+    )
+  
+  limma_design <- model.matrix(
+    ~ sCALL + LaneGroup,
+    data = limma_df
+  )
+  
+  limma_y <- matrix(
+    limma_df$Percent_CD8,
+    nrow = 1,
+    dimnames = list(
+      "Five_transcript_percent",
+      NULL
+    )
+  )
+  
+  limma_fit <- limma::lmFit(
+    limma_y,
+    limma_design
+  )
+  
+  limma_fit <- limma::eBayes(
+    limma_fit
+  )
+  
+  coef_name <- paste0(
+    "LaneGroup",
+    condition
+  )
+  
+  limma_result <- limma::topTable(
+    limma_fit,
+    coef = coef_name,
+    number = Inf,
+    sort.by = "none"
+  )
+  
+  list(
+    condition = condition,
+    pair_df = pair_df,
+    wilcox = wilcox_result,
+    limma = limma_result
+  )
+}
+
+proportion_results <- setNames(
+  lapply(
+    trained_conditions,
+    run_proportion_paired_test
+  ),
+  trained_conditions
+)
+
+proportion_summary <- bind_rows(
+  lapply(
+    proportion_results,
+    function(res) {
+      
+      if (is.null(res$wilcox)) {
+        
+        return(
+          tibble(
+            Condition = res$condition,
+            N_subjects = nrow(res$pair_df),
+            Mean_diff_pct_points = NA_real_,
+            N_increased = NA_integer_,
+            Wilcoxon_p = NA_real_,
+            Limma_p = NA_real_
+          )
+        )
+      }
+      
+      tibble(
+        Condition = res$condition,
+        N_subjects = nrow(res$pair_df),
+        Mean_diff_pct_points = round(
+          mean(
+            res$pair_df$Difference_pct_points
+          ),
+          3
+        ),
+        N_increased = sum(
+          res$pair_df$Difference_pct_points > 0
+        ),
+        Wilcoxon_p = res$wilcox$p.value,
+        Limma_p = res$limma$P.Value[1]
+      )
+    }
+  )
+) %>%
+  mutate(
+    Panel_adj.P.Val = p.adjust(
+      Limma_p,
+      method = "BH"
+    )
+  )
+
+kable(
+  proportion_summary,
+  digits = 4,
+  caption = "Five-transcript CD8 percentage with panel-specific correction"
+)
+```
+<!--
+# 3. Pseudobulk expression of the requested marker genes
+
+This analysis evaluates expression of the six prespecified genes in the pre-PMA CD8 population using subject-level pseudobulk RNA counts.
+-->
+```{r}
+#| label: marker-expression-pseudobulk
+
+cd8_pre <- subset(
+  cd8,
+  subset =
+    Treatment == "Untreated" &
+    LaneGroup %in% c(
+      "untrained",
+      trained_conditions
+    )
+)
+
+DefaultAssay(cd8_pre) <- "RNA"
+
+counts <- GetAssayData(
+  cd8_pre,
+  assay = "RNA",
+  layer = "counts"
+)
+
+meta <- cd8_pre@meta.data
+
+# Create one pseudobulk sample per subject x condition
+meta$pseudobulk_id <- paste(
+  meta$sCALL,
+  meta$LaneGroup,
+  sep = "_"
+)
+
+pb_ids <- unique(
+  meta$pseudobulk_id
+)
+
+pb_counts <- sapply(
+  pb_ids,
+  function(id) {
+    
+    cells <- rownames(meta)[
+      meta$pseudobulk_id == id
+    ]
+    
+    Matrix::rowSums(
+      counts[
+        ,
+        cells,
+        drop = FALSE
+      ]
+    )
+  }
+)
+
+# Make sure pseudobulk counts remain a matrix
+pb_counts <- as.matrix(pb_counts)
+
+colnames(pb_counts) <- pb_ids
+
+# Pseudobulk metadata
+pb_meta <- meta %>%
+  select(
+    pseudobulk_id,
+    sCALL,
+    LaneGroup
+  ) %>%
+  distinct()
+
+pb_meta <- pb_meta[
+  match(
+    colnames(pb_counts),
+    pb_meta$pseudobulk_id
+  ),
+  ,
+  drop = FALSE
+]
+
+pb_meta$sCALL <- factor(
+  pb_meta$sCALL
+)
+
+pb_meta$LaneGroup <- factor(
+  pb_meta$LaneGroup,
+  levels = c(
+    "untrained",
+    trained_conditions
+  )
+)
+
+# Remove pseudobulk samples with missing subject or condition
+valid_pb <- (
+  !is.na(pb_meta$sCALL) &
+  !is.na(pb_meta$LaneGroup)
+)
+
+pb_meta <- pb_meta[
+  valid_pb,
+  ,
+  drop = FALSE
+]
+
+pb_counts <- pb_counts[
+  ,
+  valid_pb,
+  drop = FALSE
+]
+
+cat(
+  "Number of pseudobulk samples:",
+  ncol(pb_counts),
+  "\n"
+)
+
+#kable(
+#  pb_meta,
+#  caption = "Pseudobulk samples"
+#)
+
+# edgeR object
+dge <- edgeR::DGEList(
+  counts = pb_counts
+)
+
+# Filter genes with insufficient expression
+keep <- edgeR::filterByExpr(
+  dge,
+  group = pb_meta$LaneGroup
+)
+
+dge <- dge[
+  keep,
+  ,
+  keep.lib.sizes = FALSE
+]
+
+# TMM normalization
+dge <- edgeR::calcNormFactors(
+  dge
+)
+
+# Subject-paired design
+design <- model.matrix(
+  ~ sCALL + LaneGroup,
+  data = pb_meta
+)
+
+cat(
+  "Design matrix dimensions:",
+  nrow(design),
+  "x",
+  ncol(design),
+  "\n"
+)
+
+# voom + limma
+v <- limma::voom(
+  dge,
+  design,
+  plot = FALSE
+)
+
+fit <- limma::lmFit(
+  v,
+  design
+)
+
+fit <- limma::eBayes(
+  fit
+)
+```
+
+<!--
+# 4. Six prespecified marker genes
+# 4. Six prespecified biologically targeted marker genes
+
+The six genes evaluated here (**TCF7, PDCD1, SLAMF6, CD28, CCR7, and SELL**) were selected **a priori** based on their established biological relevance to the stem-like CD8 T-cell phenotype of interest. This is therefore a targeted hypothesis-driven analysis rather than an exploratory transcriptome-wide screen.
+
+For this targeted analysis, **nominal p-values are used to evaluate the prespecified gene-level hypotheses and are not subjected to FDR correction for the primary interpretation**. Effect sizes (log-fold changes) and consistency across subjects should also be considered when interpreting the results.
+-->
+
+```{r}
+#| label: targeted-marker-results
+
+extract_targeted_markers <- function(
+  coef_name,
+  condition_label
+) {
+  
+  all_results <- limma::topTable(
+    fit,
+    coef = coef_name,
+    number = Inf,
+    sort.by = "none"
+  )
+  
+  target <- all_results[
+    rownames(all_results) %in% genes_to_test,
+    ,
+    drop = FALSE
+  ]
+  
+  target <- target[
+    match(
+      genes_to_test,
+      rownames(target)
+    ),
+    ,
+    drop = FALSE
+  ]
+  
+  tibble(
+    Gene = genes_to_test,
+    Comparison = condition_label,
+    logFC = target$logFC,
+    AveExpr = target$AveExpr,
+    P.Value = target$P.Value
+  )
+}
+
+marker_results <- bind_rows(
+  
+  extract_targeted_markers(
+    "LaneGroupSYKi",
+    "SYKi vs untrained"
+  ),
+  
+  extract_targeted_markers(
+    "LaneGroupMDP",
+    "MDP vs untrained"
+  ),
+  
+  extract_targeted_markers(
+    "LaneGroupBG",
+    "BG vs untrained"
+  )
+  
+)
+
+marker_results_display <- marker_results %>%
+  mutate(
+    logFC = round(logFC, 3),
+    AveExpr = round(AveExpr, 3),
+    P.Value = signif(P.Value, 4)
+  )
+
+kable(
+  marker_results_display,
+  digits = 4,
+  caption = "Targeted analysis of six prespecified stem-like CD8 marker genes. Nominal p-values are reported."
+)
+```
+
+# 5. Marker-expression plot
+
+Red bars indicate **nominal p < 0.05** for the prespecified targeted genes. Because these genes were selected a priori based on the biological hypothesis, FDR correction is not used as the significance criterion in this targeted analysis.
+
+```{r}
+#| label: marker-expression-plot
+#| fig-width: 9
+#| fig-height: 5
+
+marker_plot_data <- marker_results %>%
+  mutate(
+    Comparison = factor(
+      Comparison,
+      levels = c(
+        "SYKi vs untrained",
+        "MDP vs untrained",
+        "BG vs untrained"
+      )
+    ),
+    
+    Significant = (
+      !is.na(P.Value) &
+      P.Value < 0.05
+    )
+  )
+
+ggplot(
+  marker_plot_data,
+  aes(
+    x = Gene,
+    y = logFC,
+    fill = Significant
+  )
+) +
+  geom_col() +
+  
+  geom_hline(
+    yintercept = 0,
+    linewidth = 0.3
+  ) +
+  
+  facet_wrap(
+    ~ Comparison
+  ) +
+  
+  scale_fill_manual(
+    values = c(
+      `TRUE` = "#c0392b",
+      `FALSE` = "grey70"
+    ),
+    guide = "none"
+  ) +
+  
+  labs(
+    title = "Pseudobulk expression of prespecified stem-like CD8 markers",
+    subtitle = "Red indicates nominal P < 0.05; genes were selected a priori based on known biology",
+    x = NULL,
+    y = "logFC (trained vs. untrained)"
+  ) +
+  
+  theme_bw(
+    base_size = 12
+  ) +
+  
+  theme(
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
+```
+# 6. Individual-subject expression of the six targeted genes
+
+The pseudobulk differential-expression analysis estimates the overall training-associated effect while accounting for subject. The plots below show the underlying expression values for each individual subject. Each line connects samples from the same subject across the four pre-PMA conditions.
+
+This visualization is important for determining whether the direction of a gene-expression difference is consistent across subjects or is primarily driven by an individual subject.
+
+```{r}
+#| label: individual-subject-gene-expression
+#| fig-width: 12
+#| fig-height: 8
+
+
+# Extract normalized pseudobulk expression from the voom object
+voom_expression <- as.data.frame(v$E)
+
+# Keep the six prespecified genes
+individual_expression <- voom_expression[
+  rownames(voom_expression) %in% genes_to_test,
+  ,
+  drop = FALSE
+]
+
+# Add gene names
+individual_expression$Gene <- rownames(individual_expression)
+
+# Convert to long format
+individual_expression_long <- individual_expression %>%
+  pivot_longer(
+    cols = -Gene,
+    names_to = "pseudobulk_id",
+    values_to = "logCPM"
+  ) %>%
+  left_join(
+    pb_meta %>%
+      mutate(
+        pseudobulk_id = as.character(pseudobulk_id)
+      ),
+    by = "pseudobulk_id"
+  ) %>%
+  mutate(
+    LaneGroup = factor(
+      LaneGroup,
+      levels = c(
+        "untrained",
+        "SYKi",
+        "MDP",
+        "BG"
+      )
+    ),
+    Gene = factor(
+      Gene,
+      levels = genes_to_test
+    )
+  )
+
+# Show the data used for the plot
+#kable(
+#  individual_expression_long %>%
+#    arrange(Gene, sCALL, LaneGroup),
+#  digits = 3,
+#  caption = "Individual-subject pseudobulk expression (voom logCPM)"
+#)
+
+# Individual-subject plot
+ggplot(
+  individual_expression_long,
+  aes(
+    x = LaneGroup,
+    y = logCPM,
+    group = sCALL
+  )
+) +
+  geom_line(
+    alpha = 0.65,
+    linewidth = 0.7
+  ) +
+  geom_point(
+    aes(shape = sCALL),
+    size = 3
+  ) +
+  facet_wrap(
+    ~ Gene,
+    scales = "free_y",
+    ncol = 3
+  ) +
+  labs(
+    title = "Individual-subject expression of targeted CD8 markers",
+    subtitle = "Pre-PMA pseudobulk expression; lines connect the same subject",
+    x = NULL,
+    y = "Expression (voom logCPM)",
+    shape = "Subject"
+  ) +
+  theme_bw(
+    base_size = 12
+  ) +
+  theme(
+    strip.text = element_text(
+      face = "bold"
+    ),
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    ),
+    legend.position = "bottom"
+  )
+```
+
+
+
+# 7. Summary
+
+At the subject level, SYKi produced the most consistent increase in the RNA-defined stem-like/memory CD8 population, with an increase observed in 4 of 5 subjects and an average increase of 1.31 percentage points compared with untrained. Although this did not reach statistical significance with only five subjects (limma p=0.075; Wilcoxon p=0.106), the consistency and direction of the SYKi response support further investigation. 
+Targeted pseudobulk analysis of the six stem-like CD8-associated genes was also performed to determine whether training is associated with changes in their expression. The six genes evaluated in this analysis (**TCF7, PDCD1, SLAMF6, CD28, CCR7, and SELL**) were prespecified based on their known relevance to the stem-like CD8 T-cell phenotype rather than selected from an exploratory genome-wide analysis.
+
+Accordingly, the targeted pseudobulk analysis reports **nominal p-values** for the individual gene-level hypotheses. A nominal **P < 0.05** is used to highlight results in the figure. The magnitude and direction of the log-fold change and consistency of the response across subjects should be considered together with the p-values.
+
+The five-transcript cell population is separately defined by simultaneous RNA detection of **TCF7, SLAMF6, CD28, CCR7, and SELL** within the same Monaco-defined CD8 cell. Subject-level proportions are used so that individual cells are not treated as independent biological replicates.
